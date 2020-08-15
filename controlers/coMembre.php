@@ -5,41 +5,49 @@
  * Date: 24/05/2020
  * Time: 12:42
  */
-require '../tools.php';
+require '../tools/tools.php';
 require '../class/Action.php';
-require '../class/Personne.php';
-require '../models/moPersonne.php';
+require '../class/Membre.php';
+require '../models/moMembre.php';
 $_ACTION = new Action(); //Instance de la class Action pour le CRUD
-$_ModelPersonne = new moPersonne(); // Instance de la class Model couche d'acces à la BD
-$_Personne = new Personne();
+$_ModelMembre = new moMembre(); // Instance de la class Model couche d'acces à la BD
+$_Membre = new Membre();
+
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAll)
 {
     //Traitement de la connexion
-    $_Personne -> setAction($_REQUEST_ACTION);
-    $_Personne -> setStatus(1);
-    $_Response = $_ModelPersonne ->CrudPersonnes($_Personne, $_ACTION);
+    $_Membre -> setAction($_REQUEST_ACTION);
+    $_Membre -> setStatus(1);
+    $_Response = $_ModelMembre ->CrudMembre($_Membre);
+
     $_RESPONSE = $tools::getMessageError($_Response);
 }
 if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUEST_ACTION == $_ACTION::$UpdateById))
 {
     if(
-        isset($_REQUEST['FistName']) && !empty($_REQUEST['FistName'])  &&
-        isset($_REQUEST['LastName']) && !empty($_REQUEST['LastName']) &&
-        isset($_REQUEST['Email']) && !empty($_REQUEST['Email']) &&
-        isset($_REQUEST['Contact']) && !empty($_REQUEST['Contact'])
+        isset($_REQUEST['nom']) && !empty($_REQUEST['nom'])  &&
+        isset($_REQUEST['prenom']) && !empty($_REQUEST['prenom']) &&
+        isset($_REQUEST['communeId']) && !empty($_REQUEST['communeId'])
     ){
-        //$_Personne = new Personne();
-        $_Personne -> setPersonneId(isset($_REQUEST['PersonneId']) && !empty($_REQUEST['PersonneId']) ? $_REQUEST['PersonneId'] : $tools::generateGuid());
-        $_Personne -> setFistName($_REQUEST['FistName']);
-        $_Personne -> setLastName($_REQUEST['LastName']);
-        $_Personne -> setEmail($_REQUEST['Email']);
-        $_Personne -> setContact($_REQUEST['Contact']);
-        $_Personne -> setCodePostal(isset($_REQUEST['codePostal']) && !empty($_REQUEST['codePostal']) ? $_REQUEST['codePostal'] : '225');
-        $_Personne -> setSexe(isset($_REQUEST['Sexe']) && !empty($_REQUEST['Sexe']) ? $_REQUEST['Sexe'] : 'M');
-        $_Personne -> setStatut($tools::$enabled);
-        $_Personne -> setAction($_REQUEST_ACTION);
+        //$_Membre = new Membre();
+        $_Membre -> setMembreId(isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId']) ? $_REQUEST['membreId'] : $tools::generateGuid());
+        $_Membre -> setNom($_REQUEST['nom']);
+        $_Membre -> setPrenom($_REQUEST['prenom']);
+        $_Membre -> setEmail($_REQUEST['email']);
+        $_Membre -> setContact($_REQUEST['contact']);
+        $_Membre -> setSex(isset($_REQUEST['sex']) && !empty($_REQUEST['sex']) ? $_REQUEST['sex'] : 'M');
+        $_Membre -> setCommuneId($_REQUEST['communeId']);
+        $_Membre -> setLieuVoteId($_REQUEST['lieuVoteId']);
+        $_Membre -> setDateNaissance($_REQUEST['dateNaissance']);
+        $_Membre -> setLieuNaissance($_REQUEST['lieuNaissance']);
+        $_Membre -> setAdressePhysique($_REQUEST['adressePhysique']);
+        $_Membre -> setAdressePostale(isset($_REQUEST['adressePostale']) && !empty($_REQUEST['adressePostale']) ? $_REQUEST['adressePostale'] : '225');
+        $_Membre -> setProfession($_REQUEST['profession']);
+        $_Membre -> setTypeMembreId($_REQUEST['typeMembreId']);
+        $_Membre -> setStatus($tools::$enabled);
+        $_Membre -> setAction($_REQUEST_ACTION);
         //Insertion en base
-        $_Response = $_ModelPersonne ->CrudPersonnes($_Personne, $_ACTION);
+        $_Response = $_ModelMembre ->CrudMembre($_Membre);
         $_RESPONSE = $tools::getMessageSuccess($_Response);
     }
     else{
@@ -48,12 +56,12 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
 }
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
 {
-    if(isset($_REQUEST['personneId'])){
+    if(isset($_REQUEST['MembreId'])){
         //Traitement de la connexion
-        $_Personne = new Personne();
-        $_Personne -> setAction($_REQUEST_ACTION);
-        $_Personne -> setPersonneId($_REQUEST['personneId']);
-        $_Response = $_ModelPersonne ->CrudPersonnes($_Personne, $_ACTION);
+        $_Membre = new Membre();
+        $_Membre -> setAction($_REQUEST_ACTION);
+        $_Membre -> setMembreId($_REQUEST['membreId']);
+        $_Response = $_ModelMembre ->CrudMembre($_Membre);
 
         $_RESPONSE = $tools::getMessageSuccess($_Response);
     }
@@ -67,9 +75,9 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
-        $_Personne -> setAction($_REQUEST_ACTION);
-        $_Personne -> setPersonneId($_REQUEST['valeur']);
-        $_Response = $_ModelPersonne ->CrudPersonnes($_Personne, $_ACTION);
+        $_Membre -> setAction($_REQUEST_ACTION);
+        $_Membre -> setMembreId($_REQUEST['valeur']);
+        $_Response = $_ModelMembre ->CrudMembre($_Membre);
         $_RESPONSE = $tools::getMessageError($_Response);
     }
     else

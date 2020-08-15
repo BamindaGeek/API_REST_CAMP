@@ -1,111 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="21dbf74d-7174-497a-8326-2b0a52daf58c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Affectation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/AffectationMission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Campagne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Checklist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/ComiteBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Mission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Parti.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/Section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/TypeMembre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coAffectation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coAffectationMission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coCampagne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coChecklist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coComiteBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coMission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coParti.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coSection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coTypeMembre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moAffectation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moAffectationMission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moCampagne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moChecklist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moComiteBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moMission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moParti.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moSection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moTypeMembre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Access.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Access.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Membre.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Membre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/coMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coMembre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/coUtilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coUtilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/MoAccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moAccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/moMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moMembre.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="bdd.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/bdd.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tools.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/tools.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoAccess.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/MoAccess.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moMembre.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/moMembre.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/models/bdd.php" />
-        <option value="$PROJECT_DIR$/models/MoAccess.php" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1g9Mt2Xyh4ly7yZrN64iFBetmxX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="API_REST_CAMP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API_REST_CAMP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API_REST_CAMP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API_REST_CAMP" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -116,18 +98,7 @@
       <recent name="C:\wamp64\www\API_REST_CAMP\models" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,71 +110,57 @@
       <option name="presentableId" value="Default" />
       <updated>1597500479672</updated>
       <workItem from="1597500481417" duration="1330000" />
+      <workItem from="1597522567263" duration="2218000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1330000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/bdd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/MoAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/moMembre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597520637754">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597506868194" />
+    <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597520637754" />
+    <state x="-1171" y="265" width="421" height="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1597515409622">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1171" y="265" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597507335337" />
+    <state x="-1171" y="265" width="421" height="414" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597515409622" />
+    <state x="-1263" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597516723273">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1263" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597516723273" />
+    <state x="-1246" y="282" key="NewPhpClassDialog" timestamp="1597517263426">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1246" y="282" key="NewPhpClassDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597515505321" />
+    <state x="-1246" y="282" key="NewPhpClassDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597517263426" />
+    <state x="-1139" y="480" key="NewPhpFileDialog" timestamp="1597524662835">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1139" y="480" key="NewPhpFileDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597524662835" />
+    <state x="-1181" y="377" width="441" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1597505620622">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1181" y="377" width="441" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505620622" />
+    <state x="-1113" y="330" width="745" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1597522902161">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1113" y="330" width="745" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505722960" />
+    <state x="-1113" y="330" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597522902161" />
   </component>
 </project>

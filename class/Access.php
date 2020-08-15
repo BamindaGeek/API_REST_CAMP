@@ -5,48 +5,56 @@
  * Date: 21/08/2019
  * Time: 10:46
  */
-include 'Personne.php';
-class Access extends Personne
+include 'Membre.php';
+class Access extends Membre
 {
-    private $ID;
-    private $AccessID;
-    private $Pseudo;
-    private $Password;
-    private $CreateOn;
-    private $Expired;
-    private $Status;
-    private $Action;
+    private $id;
+    private $accessId;
+    private $pseudo;
+    private $password;
+    private $createOn;
+    private $expired;
+    private $membreId;
+    private $status;
+    private $action;
 
     /**
-     * @return mixed
+     * Membre constructor.
      */
-    public function getID()
+    public function __construct()
     {
-        return $this->ID;
-    }
-
-    /**
-     * @param mixed $ID
-     */
-    public function setID($ID)
-    {
-        $this->ID = $ID;
     }
 
     /**
      * @return mixed
      */
-    public function getAccessID()
+    public function getId()
     {
-        return $this->AccessID;
+        return $this->id;
     }
 
     /**
-     * @param mixed $AccessID
+     * @param mixed $id
      */
-    public function setAccessID($AccessID)
+    public function setId($id)
     {
-        $this->AccessID = $AccessID;
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAccessId()
+    {
+        return $this->accessId;
+    }
+
+    /**
+     * @param mixed $accessId
+     */
+    public function setAccessId($accessId)
+    {
+        $this->accessId = $accessId;
     }
 
     /**
@@ -54,15 +62,15 @@ class Access extends Personne
      */
     public function getPseudo()
     {
-        return $this->Pseudo;
+        return $this->pseudo;
     }
 
     /**
-     * @param mixed $Pseudo
+     * @param mixed $pseudo
      */
-    public function setPseudo($Pseudo)
+    public function setPseudo($pseudo)
     {
-        $this->Pseudo = $Pseudo;
+        $this->pseudo = $pseudo;
     }
 
     /**
@@ -70,18 +78,15 @@ class Access extends Personne
      */
     public function getPassword()
     {
-        return $this->Password;
+        return $this->password;
     }
 
     /**
-     * @param mixed $Password
+     * @param mixed $password
      */
-    public function setPassword($Password)
+    public function setPassword($password)
     {
-        //$this->Password = hash("sha256", "$@_t°".$Password."ùôQ$");
-        $this->Password = $Password;
-
-         //$this->Password = $Password;
+        $this->password = $password;
     }
 
     /**
@@ -89,15 +94,15 @@ class Access extends Personne
      */
     public function getCreateOn()
     {
-        return $this->CreateOn;
+        return $this->createOn;
     }
 
     /**
-     * @param mixed $CreateOn
+     * @param mixed $createOn
      */
-    public function setCreateOn($CreateOn)
+    public function setCreateOn($createOn)
     {
-        $this->CreateOn = $CreateOn;
+        $this->createOn = $createOn;
     }
 
     /**
@@ -105,15 +110,31 @@ class Access extends Personne
      */
     public function getExpired()
     {
-        return $this->Expired;
+        return $this->expired;
     }
 
     /**
-     * @param mixed $Expired
+     * @param mixed $expired
      */
-    public function setExpired($Expired)
+    public function setExpired($expired)
     {
-        $this->Expired = $Expired;
+        $this->expired = $expired;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMembreId()
+    {
+        return $this->membreId;
+    }
+
+    /**
+     * @param mixed $membreId
+     */
+    public function setMembreId($membreId)
+    {
+        $this->membreId = $membreId;
     }
 
     /**
@@ -121,15 +142,15 @@ class Access extends Personne
      */
     public function getStatus()
     {
-        return $this->Status;
+        return $this->status;
     }
 
     /**
-     * @param mixed $UserID
+     * @param mixed $status
      */
-    public function setStatus($Status)
+    public function setStatus($status)
     {
-        $this->Status = $Status;
+        $this->status = $status;
     }
 
     /**
@@ -137,15 +158,18 @@ class Access extends Personne
      */
     public function getAction()
     {
-        return $this->Action;
+        return $this->action;
     }
 
     /**
-     * @param mixed $Action
+     * @param mixed $action
      */
-    public function setAction($Action)
+    public function setAction($action)
     {
-        $this->Action = $Action;
+        $this->action = $action;
     }
+
+
+
 
 }

@@ -6,23 +6,30 @@
  * Time: 12:02
  */
 include "messageError.php";
-class Personne extends messageError
+class Membre extends messageError
 {
     private $id;
-    private $PersonneId;
-    private $FistName;
-    private $LastName;
-    private $Email;
-    private $Phone;
-    private $Location;
-    private $Gender;
-    private $jobTitle;
-    private $birthDate;
+    private $membreId;
+    private $nom;
+    private $prenom;
+    private $email;
+    private $contact;
+    private $sex;
+    private $communeId;
+    private $lieuVoteId;
+    private $dateNaissance;
+    private $lieuNaissance;
+    private $adressePhysique;
+    private $adressePostale;
+    private $profession;
+    private $typeMembreId;
     private $status;
-    private $Action;
+    private $createBy;
+    private $createOn;
+    private $action;
 
     /**
-     * Personne constructor.
+     * Membre constructor.
      */
     public function __construct()
     {
@@ -47,49 +54,49 @@ class Personne extends messageError
     /**
      * @return mixed
      */
-    public function getPersonneId()
+    public function getMembreId()
     {
-        return $this->PersonneId;
+        return $this->membreId;
     }
 
     /**
-     * @param mixed $PersonneId
+     * @param mixed $membreId
      */
-    public function setPersonneId($PersonneId)
+    public function setMembreId($membreId)
     {
-        $this->PersonneId = $PersonneId;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFistName()
-    {
-        return $this->FistName;
-    }
-
-    /**
-     * @param mixed $FistName
-     */
-    public function setFistName($FistName)
-    {
-        $this->FistName = $FistName;
+        $this->membreId = $membreId;
     }
 
     /**
      * @return mixed
      */
-    public function getLastName()
+    public function getNom()
     {
-        return $this->LastName;
+        return $this->nom;
     }
 
     /**
-     * @param mixed $LastName
+     * @param mixed $nom
      */
-    public function setLastName($LastName)
+    public function setNom($nom)
     {
-        $this->LastName = $LastName;
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param mixed $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
     }
 
     /**
@@ -97,95 +104,175 @@ class Personne extends messageError
      */
     public function getEmail()
     {
-        return $this->Email;
+        return $this->email;
     }
 
     /**
-     * @param mixed $Email
+     * @param mixed $email
      */
-    public function setEmail($Email)
+    public function setEmail($email)
     {
-        $this->Email = $Email;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPhone()
-    {
-        return $this->Phone;
-    }
-
-    /**
-     * @param mixed $Phone
-     */
-    public function setPhone($Phone)
-    {
-        $this->Phone = $Phone;
+        $this->email = $email;
     }
 
     /**
      * @return mixed
      */
-    public function getLocation()
+    public function getContact()
     {
-        return $this->Location;
+        return $this->contact;
     }
 
     /**
-     * @param mixed $Location
+     * @param mixed $contact
      */
-    public function setLocation($Location)
+    public function setContact($contact)
     {
-        $this->Location = $Location;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getGender()
-    {
-        return $this->Gender;
-    }
-
-    /**
-     * @param mixed $Gender
-     */
-    public function setGender($Gender)
-    {
-        $this->Gender = $Gender;
+        $this->contact = $contact;
     }
 
     /**
      * @return mixed
      */
-    public function getJobTitle()
+    public function getSex()
     {
-        return $this->jobTitle;
+        return $this->sex;
     }
 
     /**
-     * @param mixed $jobTitle
+     * @param mixed $sex
      */
-    public function setJobTitle($jobTitle)
+    public function setSex($sex)
     {
-        $this->jobTitle = $jobTitle;
+        $this->sex = $sex;
     }
 
     /**
      * @return mixed
      */
-    public function getbirthDate()
+    public function getCommuneId()
     {
-        return $this->birthDate;
+        return $this->communeId;
     }
 
     /**
-     * @param mixed $birthDate
+     * @param mixed $communeId
      */
-    public function setbirthDate($birthDate)
+    public function setCommuneId($communeId)
     {
-        $this->birthDate = $birthDate;
+        $this->communeId = $communeId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLieuVoteId()
+    {
+        return $this->lieuVoteId;
+    }
+
+    /**
+     * @param mixed $lieuVoteId
+     */
+    public function setLieuVoteId($lieuVoteId)
+    {
+        $this->lieuVoteId = $lieuVoteId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateNaissance()
+    {
+        return $this->dateNaissance;
+    }
+
+    /**
+     * @param mixed $dateNaissance
+     */
+    public function setDateNaissance($dateNaissance)
+    {
+        $this->dateNaissance = $dateNaissance;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLieuNaissance()
+    {
+        return $this->lieuNaissance;
+    }
+
+    /**
+     * @param mixed $lieuNaissance
+     */
+    public function setLieuNaissance($lieuNaissance)
+    {
+        $this->lieuNaissance = $lieuNaissance;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdressePhysique()
+    {
+        return $this->adressePhysique;
+    }
+
+    /**
+     * @param mixed $adressePhysique
+     */
+    public function setAdressePhysique($adressePhysique)
+    {
+        $this->adressePhysique = $adressePhysique;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdressePostale()
+    {
+        return $this->adressePostale;
+    }
+
+    /**
+     * @param mixed $adressePostale
+     */
+    public function setAdressePostale($adressePostale)
+    {
+        $this->adressePostale = $adressePostale;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProfession()
+    {
+        return $this->profession;
+    }
+
+    /**
+     * @param mixed $profession
+     */
+    public function setProfession($profession)
+    {
+        $this->profession = $profession;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTypeMembreId()
+    {
+        return $this->typeMembreId;
+    }
+
+    /**
+     * @param mixed $typeMembreId
+     */
+    public function setTypeMembreId($typeMembreId)
+    {
+        $this->typeMembreId = $typeMembreId;
     }
 
     /**
@@ -193,15 +280,47 @@ class Personne extends messageError
      */
     public function getStatus()
     {
-        return $this->Status;
+        return $this->status;
     }
 
     /**
-     * @param mixed $Status
+     * @param mixed $status
      */
-    public function setStatus($Status)
+    public function setStatus($status)
     {
-        $this->Status = $Status;
+        $this->status = $status;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreateBy()
+    {
+        return $this->createBy;
+    }
+
+    /**
+     * @param mixed $createBy
+     */
+    public function setCreateBy($createBy)
+    {
+        $this->createBy = $createBy;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreateOn()
+    {
+        return $this->createOn;
+    }
+
+    /**
+     * @param mixed $createOn
+     */
+    public function setCreateOn($createOn)
+    {
+        $this->createOn = $createOn;
     }
 
     /**
@@ -209,31 +328,18 @@ class Personne extends messageError
      */
     public function getAction()
     {
-        return $this->Action;
+        return $this->action;
     }
 
     /**
-     * @param mixed $Action
+     * @param mixed $action
      */
-    public function setAction($Action)
+    public function setAction($action)
     {
-        $this->Action = $Action;
+        $this->action = $action;
     }
 
-    /**
-     * @return mixed
-     */
-    /*public function getMessageError()
-    {
-        return $this->messageError;
-    }*/
 
-    /**
-     * @param mixed $messageError
-     */
-    /*public function setMessageError($messageError)
-    {
-        $this->messageError = $messageError;
-    }*/
+
 
 }

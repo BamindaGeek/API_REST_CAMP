@@ -6,58 +6,65 @@
  * Time: 12:05
  */
 include "bdd.php";
-class moPersonne extends bdd
+class moMembre extends bdd
 {
     //Fonction générique permetant de faire des Creations, Reads, Updates, Deletes
     //selon l'action demandée par l'appelle
-    public function CrudPersonnes (Personne $Personne, Action $Action)
+    public function CrudMembre (Membre $Membre)
     {
-        $this->Query='CALL ps_Personnes (:PersonneId,
-                                        :FistName,
-                                        :LastName,
-                                        :Email,
-                                        :Contact,
-                                        :CodePostal,
-                                        :Sexe,
-                                        :jobTitle,
-                                        :DateNaissance,
-                                        :statut,
+        $this->Query='CALL ps_Membre (:membreId,
+                                        :nom,
+                                        :prenom,
+                                        :email,
+                                        :contact,
+                                        :sex,
+                                        :communeId,
+                                        :lieuVoteId,
+                                        :dateNaissance,
+                                        :lieuNaissance,
+                                        :adressePhysique,
+                                        :adressePostale,
+                                        :profession,
+                                        :typeMembre,
+                                        :status,
+                                        :createBy,
                                         :Action)';
         try
         {
             $this->beginTrans();
-//print_r($Personne);
+
             $PDOprepare = $this ->prepareQuery();
 
             $PDOprepare->execute(array(
-                    'PersonneId'=>$Personne->getPersonneId(),
-                    'FistName'=>$Personne->getFistName(),
-                    'LastName'=>$Personne->getLastName(),
-                    'Email'=>$Personne->getEmail(),
-                    'Contact'=>$Personne->getPhone(),
-                    'CodePostal'=>$Personne->getLocation(),
-                    'Sexe'=>$Personne->getGender(),
-                    'jobTitle'=>$Personne->getJobTitle(),
-                    'DateNaissance'=>$Personne->getbirthDate(),
-                    'statut'=>$Personne->getStatus(),
-                    'Action'=>$Personne->getAction()
+                    'membreId'=>$Membre->getMembreId(),
+                    'nom'=>$Membre->getNom(),
+                    'prenom'=>$Membre->getPrenom(),
+                    'email'=>$Membre->getEmail(),
+                    'contact'=>$Membre->getContact(),
+                    'sex'=>$Membre->getSex(),
+                    'communeId'=>$Membre->getCommuneId(),
+                    'lieuVoteId'=>$Membre->getLieuVoteId(),
+                    'dateNaissance'=>$Membre->getDateNaissance(),
+                    'lieuNaissance'=>$Membre->getLieuNaissance(),
+                    'adressePhysique'=>$Membre->getAdressePhysique(),
+                    'adressePostale'=>$Membre->getAdressePostale(),
+                    'profession'=>$Membre->getProfession(),
+                    'status'=>$Membre->getStatus(),
+                    'createBy'=>$Membre->getCreateBy(),
+                    'Action'=>$Membre->getAction()
                 )
             );
 
-            switch ($Personne->getAction()){
-                case $Action::$SelectAll:
+            switch ($Membre->getAction()){
+                case $this::$Filtre:
+                case $this::$SelectAll:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;
-                case $Action::$Filtre:
-                    $this->Response = $PDOprepare -> fetchAll();
-                    break;
-                case $Action::$SelectById:
+                case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
-                case $Action::$Insert:
-                    $this->Response = 1;
-                    break;
-                case $Action::$UpdateById:
+                case $this::$UpdateById:
+                case $this::$Insert:
                     $this->Response = 1;
                     break;
                 default:
