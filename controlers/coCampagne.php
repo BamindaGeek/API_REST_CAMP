@@ -18,6 +18,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_Campagne -> setLibelle($_REQUEST['libelle']);
         $_Campagne -> setStatus($tools::$enabled);
         $_Campagne -> setAction($_REQUEST_ACTION);
+        $_Campagne->setCreateBy($_REQUEST['createdBy']);
         //Insertion en base
         $_Response = $_ModelCampagne ->CrudCampagne($_Campagne);
         $_RESPONSE = $tools::getMessageSuccess($_Response);
@@ -43,19 +44,28 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
     }
 }
 
-if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre  || $_REQUEST_ACTION == $_ACTION::$SelectById)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
         $_Campagne -> setAction($_REQUEST_ACTION);
         $_Campagne -> setCampagneId($_REQUEST['valeur']);
         $_Response = $_ModelCampagne ->CrudCampagne($_Campagne);
-        $_RESPONSE = $tools::getMessageError($_Response);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
     }
     else
     {
         $_RESPONSE = $tools::getMessageEmpty();
     }
+}
+
+
+if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
+{
+    //Traitement de la connexion
+    $_Campagne -> setAction($_REQUEST_ACTION);
+    $_Response = $_ModelCampagne ->CrudCampagne($_Campagne);
+    $_RESPONSE = $tools::getMessageError($_Response);
 }
 
 echo json_encode($_RESPONSE);

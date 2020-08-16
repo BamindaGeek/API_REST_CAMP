@@ -8,8 +8,7 @@ class moAffectation extends bdd
                                             :acteurId,
                                             :blocId,
                                             :type,
-                                            :status,
-                                            :createBy,
+                                            :createdBy,
                                             :Action)';
 
         try
@@ -23,8 +22,7 @@ class moAffectation extends bdd
                     'acteurId'=>$affectation->getActeurId(),
                     'blocId'=>$affectation->getBlocId(),
                     'type'=>$affectation->getType(),
-                    'status'=>$affectation->getStatus(),
-                    'createBy'=>$affectation->getCreateBy(),
+                    'createdBy'=>$affectation->getCreateBy(),
                     'Action'=>$affectation->getAction()
                 )
             );
@@ -37,6 +35,7 @@ class moAffectation extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

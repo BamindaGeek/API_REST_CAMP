@@ -13,6 +13,7 @@ class moMembre extends bdd
     public function CrudMembre (Membre $Membre)
     {
         $this->Query='CALL ps_Membre (:membreId,
+                                        :numeroElecteur,
                                         :nom,
                                         :prenom,
                                         :email,
@@ -25,9 +26,15 @@ class moMembre extends bdd
                                         :adressePhysique,
                                         :adressePostale,
                                         :profession,
-                                        :typeMembre,
-                                        :status,
-                                        :createBy,
+                                        :nomPere,
+                                        :prenomPere,
+                                        :dateNaissancePere,
+                                        :lieuNaissancePere,
+                                        :nomMere,
+                                        :prenomMere,
+                                        :dateNaissanceMere,
+                                        :lieuNaissanceMere,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -37,6 +44,7 @@ class moMembre extends bdd
 
             $PDOprepare->execute(array(
                     'membreId'=>$Membre->getMembreId(),
+                    'numeroElecteur'=>$Membre->getNumeroElecteur(),
                     'nom'=>$Membre->getNom(),
                     'prenom'=>$Membre->getPrenom(),
                     'email'=>$Membre->getEmail(),
@@ -49,8 +57,15 @@ class moMembre extends bdd
                     'adressePhysique'=>$Membre->getAdressePhysique(),
                     'adressePostale'=>$Membre->getAdressePostale(),
                     'profession'=>$Membre->getProfession(),
-                    'status'=>$Membre->getStatus(),
-                    'createBy'=>$Membre->getCreateBy(),
+                    'nomPere'=>$Membre->getNomPere(),
+                    'prenomPere'=>$Membre->getPrenomPere(),
+                    'dateNaissancePere'=>$Membre->getDateNaissancePere(),
+                    'lieuNaissancePere'=>$Membre->getLieuNaissancePere(),
+                    'nomMere'=>$Membre->getNomMere(),
+                    'prenomMere'=>$Membre->getPrenomMere(),
+                    'dateNaissanceMere'=>$Membre->getDateNaissanceMere(),
+                    'lieuNaissanceMere'=>$Membre->getLieuNaissanceMere(),
+                    'createdBy'=>$Membre->getCreateBy(),
                     'Action'=>$Membre->getAction()
                 )
             );
@@ -63,6 +78,7 @@ class moMembre extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

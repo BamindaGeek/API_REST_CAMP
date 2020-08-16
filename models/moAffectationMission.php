@@ -7,8 +7,7 @@ class moAffectationMission extends bdd
         $this->Query='CALL ps_AffectationMission (:affectationMissionId,
                                         :missionId,
                                         :membreId,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -20,8 +19,7 @@ class moAffectationMission extends bdd
                     'affectationMissionId'=>$affectationMission->getAffectationMissionId(),
                     'missionId'=>$affectationMission->getMissionId(),
                     'membreId'=>$affectationMission->getMembreId(),
-                    'status'=>$affectationMission->getStatus(),
-                    'createBy'=>$affectationMission->getCreateBy(),
+                    'createdBy'=>$affectationMission->getCreateBy(),
                     'Action'=>$affectationMission->getAction()
                 )
             );
@@ -34,6 +32,7 @@ class moAffectationMission extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

@@ -8,8 +8,7 @@ class moTypeMembre extends bdd
         $this->Query='CALL ps_TypeMembre (:typeMembreId,
                                         :libelle,
                                         :code,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -21,8 +20,7 @@ class moTypeMembre extends bdd
                     'typeMembreId'=>$typeMembre->gettypeMembreId(),
                     'libelle'=>$typeMembre->getLibelle(),
                     'code'=>$typeMembre->getCode(),
-                    'status'=>$typeMembre->getStatus(),
-                    'createBy'=>$typeMembre->getCreateBy(),
+                    'createdBy'=>$typeMembre->getCreateBy(),
                     'Action'=>$typeMembre->getAction()
                 )
             );
@@ -35,6 +33,7 @@ class moTypeMembre extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

@@ -1,15 +1,16 @@
 <?php
 
 include 'bdd.php';
-class moSection extends bdd
+class moObjectif extends bdd
 {
-    public function CrudSection(Section $section)
+
+    public function CrudObjectif(Objectif $objectif)
     {
-        $this->Query='CALL ps_Section (:sectionId,
+        $this->Query='CALL ps_Objectif(:objectifId,
                                         :libelle,
                                         :code,
-                                        :comiteBaseId,
-                                        :status,
+                                        :valeur,
+                                        :campagneId,
                                         :createdBy,
                                         :Action)';
         try
@@ -19,17 +20,17 @@ class moSection extends bdd
             $PDOprepare = $this ->prepareQuery();
 
             $PDOprepare->execute(array(
-                    'sectionId'=>$section->getsectionId(),
-                    'libelle'=>$section->getLibelle(),
-                    'code'=>$section->getCode(),
-                    'comiteBaseId'=>$section->getComiteBaseId(),
-                    'status'=>$section->getStatus(),
-                    'createdBy'=>$section->getCreateBy(),
-                    'Action'=>$section->getAction()
+                    'objectifId'=>$objectif->getObjectifId(),
+                    'libelle'=>$objectif->getLibelle(),
+                    'code'=>$objectif->getCode(),
+                    'valeur'=>$objectif->getValeur(),
+                    'campagneId'=>$objectif->getCampagneId(),
+                    'createdBy'=>$objectif->getCreateBy(),
+                    'Action'=>$objectif->getAction()
                 )
             );
 
-            switch ($section->getAction()){
+            switch ($objectif->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
                     $this->Response = $PDOprepare -> fetchAll();

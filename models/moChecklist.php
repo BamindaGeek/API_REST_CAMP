@@ -9,8 +9,7 @@ class moChecklist extends bdd
                                         :affectationMissionId,
                                         :membreId,
                                         :etat,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -23,8 +22,7 @@ class moChecklist extends bdd
                     'affectationMissionId'=>$checklist->getAffectationMissionId(),
                     'membreId'=>$checklist->getMembreId(),
                     'etat'=>$checklist->getEtat(),
-                    'status'=>$checklist->getStatus(),
-                    'createBy'=>$checklist->getCreateBy(),
+                    'createdBy'=>$checklist->getCreateBy(),
                     'Action'=>$checklist->getAction()
                 )
             );
@@ -37,6 +35,7 @@ class moChecklist extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

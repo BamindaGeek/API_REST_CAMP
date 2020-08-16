@@ -22,6 +22,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_Section -> setComiteBaseId($_REQUEST['comiteBaseId']);
         $_Section -> setStatus($tools::$enabled);
         $_Section -> setAction($_REQUEST_ACTION);
+        $_Section->setCreateBy($_REQUEST['createdBy']);
         //Insertion en base
         $_Response = $_ModelSection ->CrudSection($_Section);
         $_RESPONSE = $tools::getMessageSuccess($_Response);
@@ -47,19 +48,28 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
     }
 }
 
-if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre  || $_REQUEST_ACTION == $_ACTION::$SelectById)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
         $_Section -> setAction($_REQUEST_ACTION);
         $_Section -> setSectionId($_REQUEST['valeur']);
         $_Response = $_ModelSection ->CrudSection($_Section);
-        $_RESPONSE = $tools::getMessageError($_Response);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
     }
     else
     {
         $_RESPONSE = $tools::getMessageEmpty();
     }
+}
+
+
+if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
+{
+    //Traitement de la connexion
+    $_Section -> setAction($_REQUEST_ACTION);
+    $_Response = $_ModelSection ->CrudSection($_Section);
+    $_RESPONSE = $tools::getMessageError($_Response);
 }
 
 echo json_encode($_RESPONSE);

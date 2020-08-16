@@ -10,6 +10,7 @@ class Membre extends messageError
 {
     private $id;
     private $membreId;
+    private $numeroElecteur;
     private $nom;
     private $prenom;
     private $email;
@@ -22,7 +23,14 @@ class Membre extends messageError
     private $adressePhysique;
     private $adressePostale;
     private $profession;
-    private $typeMembreId;
+    private $nomPere;
+    private $prenomPere;
+    private $dateNaissancePere;
+    private $lieuNaissancePere;
+    private $nomMere;
+    private $prenomMere;
+    private $dateNaissanceMere;
+    private $lieuNaissanceMere;
     private $status;
     private $createBy;
     private $createOn;
@@ -66,6 +74,24 @@ class Membre extends messageError
     {
         $this->membreId = $membreId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getNumeroElecteur()
+    {
+        return $this->numeroElecteur;
+    }
+
+    /**
+     * @param mixed $numeroElecteur
+     */
+    public function setNumeroElecteur($numeroElecteur)
+    {
+        $this->numeroElecteur = $numeroElecteur;
+    }
+
+
 
     /**
      * @return mixed
@@ -262,17 +288,129 @@ class Membre extends messageError
     /**
      * @return mixed
      */
-    public function getTypeMembreId()
+    public function getNomPere()
     {
-        return $this->typeMembreId;
+        return $this->nomPere;
     }
 
     /**
-     * @param mixed $typeMembreId
+     * @param mixed $nomPere
      */
-    public function setTypeMembreId($typeMembreId)
+    public function setNomPere($nomPere)
     {
-        $this->typeMembreId = $typeMembreId;
+        $this->nomPere = $nomPere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrenomPere()
+    {
+        return $this->prenomPere;
+    }
+
+    /**
+     * @param mixed $prenomPere
+     */
+    public function setPrenomPere($prenomPere)
+    {
+        $this->prenomPere = $prenomPere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateNaissancePere()
+    {
+        return $this->dateNaissancePere;
+    }
+
+    /**
+     * @param mixed $dateNaissancePere
+     */
+    public function setDateNaissancePere($dateNaissancePere)
+    {
+        $this->dateNaissancePere = $dateNaissancePere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLieuNaissancePere()
+    {
+        return $this->lieuNaissancePere;
+    }
+
+    /**
+     * @param mixed $lieuNaissancePere
+     */
+    public function setLieuNaissancePere($lieuNaissancePere)
+    {
+        $this->lieuNaissancePere = $lieuNaissancePere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNomMere()
+    {
+        return $this->nomMere;
+    }
+
+    /**
+     * @param mixed $nomMere
+     */
+    public function setNomMere($nomMere)
+    {
+        $this->nomMere = $nomMere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrenomMere()
+    {
+        return $this->prenomMere;
+    }
+
+    /**
+     * @param mixed $prenomMere
+     */
+    public function setPrenomMere($prenomMere)
+    {
+        $this->prenomMere = $prenomMere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateNaissanceMere()
+    {
+        return $this->dateNaissanceMere;
+    }
+
+    /**
+     * @param mixed $dateNaissanceMere
+     */
+    public function setDateNaissanceMere($dateNaissanceMere)
+    {
+        $this->dateNaissanceMere = $dateNaissanceMere;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLieuNaissanceMere()
+    {
+        return $this->lieuNaissanceMere;
+    }
+
+    /**
+     * @param mixed $lieuNaissanceMere
+     */
+    public function setLieuNaissanceMere($lieuNaissanceMere)
+    {
+        $this->lieuNaissanceMere = $lieuNaissanceMere;
     }
 
     /**

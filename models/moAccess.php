@@ -18,9 +18,9 @@
                                             :pseudo,
                                             :password,
                                             :expiredOn,
-                                            :Action,
                                             :membreId,
-                                            :status)';
+                                            :status,
+                                            :Action)';
 
             try
             {
@@ -33,9 +33,9 @@
                         'pseudo'=>$Access->getPseudo(),
                         'password'=>$Access->getPassword(),
                         'expiredOn'=>$Access->getExpired(),
-                        'Action'=>$Access->getAction(),
                         'membreId'=>$Access->getMembreId(),
-                        'status'=>$Access->getStatus()
+                        'status'=>$Access->getStatus(),
+                        'Action'=>$Access->getAction()
                     )
                 );
 
@@ -47,7 +47,13 @@
                     case $this::$SelectById :
                         $this->Response = $PDOprepare -> fetch();
                         break;
+                    case $this::$DeleteById:
+                    case $this::$UpdateById:
+                    case $this::$Insert:
+                        $this->Response = 1;
+                        break;
                     default:
+                        $this->Response = 2;
                         break;
                 }
 

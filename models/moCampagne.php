@@ -7,8 +7,7 @@ class moCampagne extends bdd
     {
         $this->Query='CALL ps_Campagne (:campagneId,
                                         :libelle,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -19,8 +18,7 @@ class moCampagne extends bdd
             $PDOprepare->execute(array(
                     'campagneId'=>$campagne->getcampagneId(),
                     'libelle'=>$campagne->getLibelle(),
-                    'status'=>$campagne->getStatus(),
-                    'createBy'=>$campagne->getCreateBy(),
+                    'createdBy'=>$campagne->getCreateBy(),
                     'Action'=>$campagne->getAction()
                 )
             );
@@ -33,6 +31,7 @@ class moCampagne extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

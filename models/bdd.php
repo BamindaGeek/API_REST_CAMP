@@ -9,16 +9,18 @@
 class bdd extends Action
 
 {
-    //private $host ='192.168.1.100';
-     private $host = 'dm830513-001.privatesql:35211';
-     private $userName= 'geeksquad';
-     private $userPass= 'GeekSquad225';
-     private $dbName= 'campagne_bd';
+    private $host ='192.168.1.100';
+    // private $host = 'dm830513-001.privatesql:35211';
+    // private $userName= 'geeksquad';
+    // private $userPass= 'GeekSquad225';
+    private $userName= 'root';
+    private $userPass= '';
+    private $dbName= 'campagne_bd';
 
         private $dns;
         protected $connexion;
         public $Query;
-        public $Response = 1;
+        public $Response = 190;
         public $ResponseError = 2;
 
         public function __construct()
