@@ -22,6 +22,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_Affectation -> setType($_REQUEST['type']);
         $_Affectation -> setStatus($tools::$enabled);
         $_Affectation -> setAction($_REQUEST_ACTION);
+        $_Affectation -> setCreateBy($_REQUEST['createdBy']);
         //Insertion en base
         $_Response = $_ModelAffectation ->CrudAffectation($_Affectation);
         $_RESPONSE = $tools::getMessageSuccess($_Response);
@@ -47,19 +48,29 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
     }
 }
 
-if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre  || $_REQUEST_ACTION == $_ACTION::$SelectById)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
         $_Affectation -> setAction($_REQUEST_ACTION);
         $_Affectation -> setAffectationId($_REQUEST['valeur']);
+        $_Affectation -> setType($_REQUEST['type']);
         $_Response = $_ModelAffectation ->CrudAffectation($_Affectation);
-        $_RESPONSE = $tools::getMessageError($_Response);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
     }
     else
     {
         $_RESPONSE = $tools::getMessageEmpty();
     }
+}
+
+if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
+{
+    //Traitement de la connexion
+    $_Affectation -> setAction($_REQUEST_ACTION);
+    $_Affectation -> setType($_REQUEST['type']);
+    $_Response = $_ModelAffectation ->CrudAffectation($_Affectation);
+    $_RESPONSE = $tools::getMessageError($_Response);
 }
 
 echo json_encode($_RESPONSE);

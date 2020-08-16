@@ -8,8 +8,7 @@ class moMission extends bdd
         $this->Query='CALL ps_Mission (:missionId,
                                         :libelle,
                                         :checkList,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -21,8 +20,7 @@ class moMission extends bdd
                     'missionId'=>$mission->getmissionId(),
                     'libelle'=>$mission->getLibelle(),
                     'checkList'=>$mission->getCheckList(),
-                    'status'=>$mission->getStatus(),
-                    'createBy'=>$mission->getCreateBy(),
+                    'createdBy'=>$mission->getCreateBy(),
                     'Action'=>$mission->getAction()
                 )
             );
@@ -35,6 +33,7 @@ class moMission extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

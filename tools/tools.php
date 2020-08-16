@@ -46,7 +46,8 @@ class tools
     }
     //Gestion des messages d'erreurs
     public static function getMessageError(array $response){
-      if(!$response || sizeof($response) <= 0)
+        //print_r(sizeof($response));
+      if(sizeof($response) <= 0)
       {
           //Nothing Item result
           $_RESPONSE['message'] = 'Aucun élement trouvé dans le système';
@@ -73,6 +74,7 @@ class tools
           $_RESPONSE['donnes'] = null;
 
       }
+      //print_r($_RESPONSE);
       return $_RESPONSE;
   }
     //Generation d'une clé unique de type Guid

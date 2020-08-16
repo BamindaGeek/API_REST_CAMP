@@ -8,8 +8,8 @@ class moComiteBase extends bdd
         $this->Query='CALL ps_ComiteBase (:comiteBaseId,
                                         :libelle,
                                         :code,
-                                        :status,
-                                        :createBy,
+                                        :partiId,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -21,11 +21,12 @@ class moComiteBase extends bdd
                     'comiteBaseId'=>$comiteBase->getcomiteBaseId(),
                     'libelle'=>$comiteBase->getLibelle(),
                     'code'=>$comiteBase->getCode(),
-                    'status'=>$comiteBase->getStatus(),
-                    'createBy'=>$comiteBase->getCreateBy(),
+                    'partiId'=>$comiteBase->getPartiId(),
+                    'createdBy'=>$comiteBase->getCreateBy(),
                     'Action'=>$comiteBase->getAction()
                 )
             );
+
 
             switch ($comiteBase->getAction()){
                 case $this::$Filtre:
@@ -34,7 +35,9 @@ class moComiteBase extends bdd
                     break;
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
+                    //print_r($this->Response);
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

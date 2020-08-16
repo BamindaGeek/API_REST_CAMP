@@ -7,8 +7,7 @@ class moParti extends bdd
     {
         $this->Query='CALL ps_Parti (:partiId,
                                         :libelle,
-                                        :status,
-                                        :createBy,
+                                        :createdBy,
                                         :Action)';
         try
         {
@@ -19,8 +18,7 @@ class moParti extends bdd
             $PDOprepare->execute(array(
                     'partiId'=>$parti->getPartiId(),
                     'libelle'=>$parti->getLibelle(),
-                    'status'=>$parti->getStatus(),
-                    'createBy'=>$parti->getCreateBy(),
+                    'createdBy'=>$parti->getCreateBy(),
                     'Action'=>$parti->getAction()
                 )
             );
@@ -33,6 +31,7 @@ class moParti extends bdd
                 case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
                     break;
+                case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
                     $this->Response = 1;

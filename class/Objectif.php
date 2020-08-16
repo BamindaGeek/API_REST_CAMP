@@ -1,13 +1,14 @@
 <?php
 
 include 'messageError.php';
-class ComiteBase extends messageError
+class Objectif extends messageError
 {
     private $id;
-    private $comiteBaseId;
+    private $objectifId;
     private $libelle;
     private $code;
-    private $partiId;
+    private $valeur;
+    private $campagneId;
     private $status;
     private $createBy;
     private $createOn;
@@ -39,18 +40,20 @@ class ComiteBase extends messageError
     /**
      * @return mixed
      */
-    public function getComiteBaseId()
+    public function getObjectifId()
     {
-        return $this->comiteBaseId;
+        return $this->objectifId;
     }
 
     /**
-     * @param mixed $comiteBaseId
+     * @param mixed $objectifId
      */
-    public function setComiteBaseId($comiteBaseId)
+    public function setObjectifId($objectifId)
     {
-        $this->comiteBaseId = $comiteBaseId;
+        $this->objectifId = $objectifId;
     }
+
+
 
     /**
      * @return mixed
@@ -87,20 +90,36 @@ class ComiteBase extends messageError
     /**
      * @return mixed
      */
-    public function getPartiId()
+    public function getValeur()
     {
-        return $this->partiId;
+        return $this->valeur;
     }
 
     /**
-     * @param mixed $partiId
+     * @param mixed $valeur
      */
-    public function setPartiId($partiId)
+    public function setValeur($valeur)
     {
-        $this->partiId = $partiId;
+        $this->valeur = $valeur;
     }
 
 
+
+    /**
+     * @return mixed
+     */
+    public function getCampagneId()
+    {
+        return $this->campagneId;
+    }
+
+    /**
+     * @param mixed $campagneId
+     */
+    public function setCampagneId($campagneId)
+    {
+        $this->campagneId = $campagneId;
+    }
 
     /**
      * @return mixed
@@ -165,7 +184,6 @@ class ComiteBase extends messageError
     {
         $this->action = $action;
     }
-
 
 
 }

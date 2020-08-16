@@ -68,7 +68,7 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Insert){
         $_Access -> setPassword($_REQUEST['password']);
         $_Access -> setMembreId($_REQUEST['membreId']);
         $_Access -> setAction($_REQUEST_ACTION);
-        $_Access -> setStatus($tools::$desabled);
+        $_Access -> setStatus($tools::$enabled);
         $_Response = $_ModelAccess ->CrudAccess($_Access);
 
         $_RESPONSE = $tools::getMessageSuccess($_Response);
