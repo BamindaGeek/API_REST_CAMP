@@ -11,6 +11,7 @@ require '../class/Access.php';
 require '../models/moAccess.php';
 
 $_ACTION = new Action(); //Instance de la class Objet
+$_Access = new Access();
 $_ModelAccess = new moAccess(); // Instance de la class Model couche d'acces à la BD
 //Connexion d'un utilisateur
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Connect)
@@ -22,7 +23,6 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Connect)
     {
 
         //Traitement de la connexion
-        $_Access = new Access();
         $_Access -> setPseudo($_REQUEST['pseudo']);
         $_Access -> setPassword($_REQUEST['password']);
         $_Access -> setStatus(1);
@@ -62,7 +62,6 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Insert){
         isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId'])
     )
     {
-        $_Access = new Access();
         $_Access -> setAccessID($_NEWID);
         $_Access -> setPseudo($_REQUEST['pseudo']);
         $_Access -> setPassword($_REQUEST['password']);
@@ -78,4 +77,15 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Insert){
         $_RESPONSE = $tools::getMessageEmpty();
     }
 }
+
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAll)
+{
+    //Traitement de la connexion
+    $_Access -> setAction($_REQUEST_ACTION);
+    $_Access -> setStatus(1);
+    $_Response = $_ModelAccess ->CrudAccess($_Access);
+
+    $_RESPONSE = $tools::getMessageError($_Response);
+}
+
 echo json_encode($_RESPONSE);
