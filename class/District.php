@@ -1,21 +1,16 @@
 <?php
 
 include 'messageError.php';
-class Section extends messageError
+class District extends messageError
 {
     private $id;
-    private $sectionId;
+    private $districtId;
     private $libelle;
-    private $code;
-    private $communeId;
     private $status;
-    private $createBy;
-    private $createOn;
+    private $createdBy;
+    private $createdOn;
     private $action;
 
-    /**
-     * Membre constructor.
-     */
     public function __construct()
     {
     }
@@ -39,17 +34,17 @@ class Section extends messageError
     /**
      * @return mixed
      */
-    public function getSectionId()
+    public function getDistrictId()
     {
-        return $this->sectionId;
+        return $this->districtId;
     }
 
     /**
-     * @param mixed $sectionId
+     * @param mixed $districtId
      */
-    public function setSectionId($sectionId)
+    public function setDistrictId($districtId)
     {
-        $this->sectionId = $sectionId;
+        $this->districtId = $districtId;
     }
 
     /**
@@ -71,39 +66,6 @@ class Section extends messageError
     /**
      * @return mixed
      */
-    public function getCode()
-    {
-        return $this->code;
-    }
-
-    /**
-     * @param mixed $code
-     */
-    public function setCode($code)
-    {
-        $this->code = $code;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCommuneId()
-    {
-        return $this->communeId;
-    }
-
-    /**
-     * @param mixed $communeId
-     */
-    public function setCommuneId($communeId)
-    {
-        $this->communeId = $communeId;
-    }
-
-
-    /**
-     * @return mixed
-     */
     public function getStatus()
     {
         return $this->status;
@@ -120,33 +82,33 @@ class Section extends messageError
     /**
      * @return mixed
      */
-    public function getCreateBy()
+    public function getCreatedBy()
     {
-        return $this->createBy;
+        return $this->createdBy;
     }
 
     /**
-     * @param mixed $createBy
+     * @param mixed $createdBy
      */
-    public function setCreateBy($createBy)
+    public function setCreatedBy($createdBy)
     {
-        $this->createBy = $createBy;
+        $this->createdBy = $createdBy;
     }
 
     /**
      * @return mixed
      */
-    public function getCreateOn()
+    public function getCreatedOn()
     {
-        return $this->createOn;
+        return $this->createdOn;
     }
 
     /**
-     * @param mixed $createOn
+     * @param mixed $createdOn
      */
-    public function setCreateOn($createOn)
+    public function setCreatedOn($createdOn)
     {
-        $this->createOn = $createOn;
+        $this->createdOn = $createdOn;
     }
 
     /**
@@ -164,7 +126,6 @@ class Section extends messageError
     {
         $this->action = $action;
     }
-
 
 
 

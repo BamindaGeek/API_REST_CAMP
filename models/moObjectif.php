@@ -10,7 +10,8 @@ class moObjectif extends bdd
                                         :libelle,
                                         :code,
                                         :valeur,
-                                        :campagneId,
+                                        :communeId,
+                                        :status;
                                         :createdBy,
                                         :Action)';
         try
@@ -24,7 +25,8 @@ class moObjectif extends bdd
                     'libelle'=>$objectif->getLibelle(),
                     'code'=>$objectif->getCode(),
                     'valeur'=>$objectif->getValeur(),
-                    'campagneId'=>$objectif->getCampagneId(),
+                    'communeId'=>$objectif->getCommuneId(),
+                    'status'=>$objectif->getStatus(),
                     'createdBy'=>$objectif->getCreateBy(),
                     'Action'=>$objectif->getAction()
                 )

@@ -8,7 +8,8 @@ class moComiteBase extends bdd
         $this->Query='CALL ps_ComiteBase (:comiteBaseId,
                                         :libelle,
                                         :code,
-                                        :partiId,
+                                        :sectionId,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -21,7 +22,8 @@ class moComiteBase extends bdd
                     'comiteBaseId'=>$comiteBase->getcomiteBaseId(),
                     'libelle'=>$comiteBase->getLibelle(),
                     'code'=>$comiteBase->getCode(),
-                    'partiId'=>$comiteBase->getPartiId(),
+                    'sectionId'=>$comiteBase->getSectionId(),
+                    'status'=>$comiteBase->getStatus(),
                     'createdBy'=>$comiteBase->getCreateBy(),
                     'Action'=>$comiteBase->getAction()
                 )

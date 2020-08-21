@@ -8,6 +8,7 @@ class moMission extends bdd
         $this->Query='CALL ps_Mission (:missionId,
                                         :libelle,
                                         :checkList,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -20,6 +21,7 @@ class moMission extends bdd
                     'missionId'=>$mission->getmissionId(),
                     'libelle'=>$mission->getLibelle(),
                     'checkList'=>$mission->getCheckList(),
+                    'status'=>$mission->getStatus(),
                     'createdBy'=>$mission->getCreateBy(),
                     'Action'=>$mission->getAction()
                 )

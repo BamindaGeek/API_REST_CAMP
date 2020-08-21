@@ -13,13 +13,13 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
     if(
         isset($_REQUEST['libelle']) && !empty($_REQUEST['libelle']) &&
         isset($_REQUEST['code']) && !empty($_REQUEST['code'])  &&
-        isset($_REQUEST['comiteBaseId']) && !empty($_REQUEST['comiteBaseId'])
+        isset($_REQUEST['communeId']) && !empty($_REQUEST['communeId'])
     ){
         //$_Section = new Section();
         $_Section -> setSectionId(isset($_REQUEST['sectionId']) && !empty($_REQUEST['sectionId']) ? $_REQUEST['sectionId'] : $tools::generateGuid());
         $_Section -> setLibelle($_REQUEST['libelle']);
         $_Section -> setCode($_REQUEST['code']);
-        $_Section -> setComiteBaseId($_REQUEST['comiteBaseId']);
+        $_Section -> setCommuneId($_REQUEST['communeId']);
         $_Section -> setStatus($tools::$enabled);
         $_Section -> setAction($_REQUEST_ACTION);
         $_Section->setCreateBy($_REQUEST['createdBy']);

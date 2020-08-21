@@ -1,37 +1,39 @@
 <?php
 
 include 'bdd.php';
-class moParti extends bdd
+
+class moRegion extends bdd
 {
-    public function CrudParti(Parti $parti)
+    public function CrudRegion(Region $region)
     {
-        $this->Query='CALL ps_Parti (:partiId,
+        $this->Query = 'CALL ps_Region (:regionId,
                                         :libelle,
+                                        :districtId,
                                         :status,
                                         :createdBy,
                                         :Action)';
-        try
-        {
+        try {
             $this->beginTrans();
 
-            $PDOprepare = $this ->prepareQuery();
+            $PDOprepare = $this->prepareQuery();
 
             $PDOprepare->execute(array(
-                    'partiId'=>$parti->getPartiId(),
-                    'libelle'=>$parti->getLibelle(),
-                    'status'=>$parti->getStatus(),
-                    'createdBy'=>$parti->getCreateBy(),
-                    'Action'=>$parti->getAction()
+                    'regionId' => $region->getRegionId(),
+                    'libelle' => $region->getLibelle(),
+                    'districtId' => $region->getDistrictId(),
+                    'status' => $region->getStatus(),
+                    'createdBy' => $region->getCreatedBy(),
+                    'Action' => $region->getAction()
                 )
             );
 
-            switch ($parti->getAction()){
+            switch ($region->getAction()) {
                 case $this::$Filtre:
                 case $this::$SelectAll:
-                    $this->Response = $PDOprepare -> fetchAll();
+                    $this->Response = $PDOprepare->fetchAll();
                     break;
                 case $this::$SelectById:
-                    $this->Response = $PDOprepare -> fetch();
+                    $this->Response = $PDOprepare->fetch();
                     break;
                 case $this::$DeleteById:
                 case $this::$UpdateById:
@@ -43,15 +45,13 @@ class moParti extends bdd
                     break;
             }
 
-            $PDOprepare -> closecursor();
+            $PDOprepare->closecursor();
 
-            $this -> commitTrans();
+            $this->commitTrans();
 
             return $this->Response;
-        }
-        catch (PDOException $e)
-        {
-            $this -> rollbackTrans();
+        } catch (PDOException $e) {
+            $this->rollbackTrans();
 
             $Msg = $this->errorMsg($e);
 

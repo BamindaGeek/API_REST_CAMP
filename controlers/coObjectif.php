@@ -14,14 +14,14 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         isset($_REQUEST['libelle']) && !empty($_REQUEST['libelle']) &&
         isset($_REQUEST['code']) && !empty($_REQUEST['code']) &&
         isset($_REQUEST['valeur']) && !empty($_REQUEST['valeur'])  &&
-        isset($_REQUEST['campagneId']) && !empty($_REQUEST['campagneId'])
+        isset($_REQUEST['communeId']) && !empty($_REQUEST['communeId'])
     ){
         //$_Objectif = new Objectif();
         $_Objectif -> setObjectifId(isset($_REQUEST['objectifId']) && !empty($_REQUEST['objectifId']) ? $_REQUEST['objectifId'] : $tools::generateGuid());
         $_Objectif -> setLibelle($_REQUEST['libelle']);
         $_Objectif -> setCode($_REQUEST['code']);
         $_Objectif -> setValeur($_REQUEST['valeur']);
-        $_Objectif -> setCampagneId($_REQUEST['campagneId']);
+        $_Objectif -> setCommuneId($_REQUEST['communeId']);
         $_Objectif -> setStatus($tools::$enabled);
         $_Objectif -> setAction($_REQUEST_ACTION);
         $_Objectif->setCreateBy($_REQUEST['createdBy']);

@@ -1,22 +1,17 @@
 <?php
 
 include 'messageError.php';
-class Objectif extends messageError
+class Departement extends messageError
 {
     private $id;
-    private $objectifId;
+    private $departementId;
     private $libelle;
-    private $code;
-    private $valeur;
-    private $communeId;
+    private $regionId;
     private $status;
-    private $createBy;
-    private $createOn;
+    private $createdBy;
+    private $createdOn;
     private $action;
 
-    /**
-     * Membre constructor.
-     */
     public function __construct()
     {
     }
@@ -40,20 +35,18 @@ class Objectif extends messageError
     /**
      * @return mixed
      */
-    public function getObjectifId()
+    public function getDepartementId()
     {
-        return $this->objectifId;
+        return $this->departementId;
     }
 
     /**
-     * @param mixed $objectifId
+     * @param mixed $departementId
      */
-    public function setObjectifId($objectifId)
+    public function setDepartementId($departementId)
     {
-        $this->objectifId = $objectifId;
+        $this->departementId = $departementId;
     }
-
-
 
     /**
      * @return mixed
@@ -74,50 +67,20 @@ class Objectif extends messageError
     /**
      * @return mixed
      */
-    public function getCode()
+    public function getRegionId()
     {
-        return $this->code;
+        return $this->regionId;
     }
 
     /**
-     * @param mixed $code
+     * @param mixed $regionId
      */
-    public function setCode($code)
+    public function setRegionId($regionId)
     {
-        $this->code = $code;
+        $this->regionId = $regionId;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getValeur()
-    {
-        return $this->valeur;
-    }
 
-    /**
-     * @param mixed $valeur
-     */
-    public function setValeur($valeur)
-    {
-        $this->valeur = $valeur;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCommuneId()
-    {
-        return $this->communeId;
-    }
-
-    /**
-     * @param mixed $communeId
-     */
-    public function setCommuneId($communeId)
-    {
-        $this->communeId = $communeId;
-    }
 
     /**
      * @return mixed
@@ -138,33 +101,33 @@ class Objectif extends messageError
     /**
      * @return mixed
      */
-    public function getCreateBy()
+    public function getCreatedBy()
     {
-        return $this->createBy;
+        return $this->createdBy;
     }
 
     /**
-     * @param mixed $createBy
+     * @param mixed $createdBy
      */
-    public function setCreateBy($createBy)
+    public function setCreatedBy($createdBy)
     {
-        $this->createBy = $createBy;
+        $this->createdBy = $createdBy;
     }
 
     /**
      * @return mixed
      */
-    public function getCreateOn()
+    public function getCreatedOn()
     {
-        return $this->createOn;
+        return $this->createdOn;
     }
 
     /**
-     * @param mixed $createOn
+     * @param mixed $createdOn
      */
-    public function setCreateOn($createOn)
+    public function setCreatedOn($createdOn)
     {
-        $this->createOn = $createOn;
+        $this->createdOn = $createdOn;
     }
 
     /**
@@ -182,6 +145,7 @@ class Objectif extends messageError
     {
         $this->action = $action;
     }
+
 
 
 }

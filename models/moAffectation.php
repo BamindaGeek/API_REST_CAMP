@@ -8,6 +8,7 @@ class moAffectation extends bdd
                                             :acteurId,
                                             :blocId,
                                             :type,
+                                            :status,
                                             :createdBy,
                                             :Action)';
 
@@ -22,6 +23,7 @@ class moAffectation extends bdd
                     'acteurId'=>$affectation->getActeurId(),
                     'blocId'=>$affectation->getBlocId(),
                     'type'=>$affectation->getType(),
+                    'status'=>$affectation->getStatus(),
                     'createdBy'=>$affectation->getCreateBy(),
                     'Action'=>$affectation->getAction()
                 )

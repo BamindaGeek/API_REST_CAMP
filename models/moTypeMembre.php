@@ -8,6 +8,7 @@ class moTypeMembre extends bdd
         $this->Query='CALL ps_TypeMembre (:typeMembreId,
                                         :libelle,
                                         :code,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -20,6 +21,7 @@ class moTypeMembre extends bdd
                     'typeMembreId'=>$typeMembre->gettypeMembreId(),
                     'libelle'=>$typeMembre->getLibelle(),
                     'code'=>$typeMembre->getCode(),
+                    'status'=>$typeMembre->getStatus(),
                     'createdBy'=>$typeMembre->getCreateBy(),
                     'Action'=>$typeMembre->getAction()
                 )

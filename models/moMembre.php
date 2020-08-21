@@ -34,6 +34,7 @@ class moMembre extends bdd
                                         :prenomMere,
                                         :dateNaissanceMere,
                                         :lieuNaissanceMere,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -65,6 +66,7 @@ class moMembre extends bdd
                     'prenomMere'=>$Membre->getPrenomMere(),
                     'dateNaissanceMere'=>$Membre->getDateNaissanceMere(),
                     'lieuNaissanceMere'=>$Membre->getLieuNaissanceMere(),
+                    'status'=>$Membre->getStatus(),
                     'createdBy'=>$Membre->getCreateBy(),
                     'Action'=>$Membre->getAction()
                 )

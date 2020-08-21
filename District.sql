@@ -1,0 +1,14 @@
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Abidjan',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Bas-Sassandra ',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Comoé ',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Denguélé',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Gôh-Djiboua',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Lacs',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Lagunes',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Montagnes',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Sassandra-Marahoué ',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Savanes',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Vallée du Bandama',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Woroba',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Yamoussoukro',UUID());
+INSERT INTO district (districtId, libelle, createdBy) VALUE (UUID(),'Zanzan',UUID());

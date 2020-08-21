@@ -7,6 +7,7 @@ class moCampagne extends bdd
     {
         $this->Query='CALL ps_Campagne (:campagneId,
                                         :libelle,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -18,6 +19,7 @@ class moCampagne extends bdd
             $PDOprepare->execute(array(
                     'campagneId'=>$campagne->getcampagneId(),
                     'libelle'=>$campagne->getLibelle(),
+                    'status'=>$campagne->getStatus(),
                     'createdBy'=>$campagne->getCreateBy(),
                     'Action'=>$campagne->getAction()
                 )

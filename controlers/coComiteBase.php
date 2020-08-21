@@ -13,14 +13,14 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
     if(
         isset($_REQUEST['libelle']) && !empty($_REQUEST['libelle']) &&
         isset($_REQUEST['code']) && !empty($_REQUEST['code']) &&
-        isset($_REQUEST['partiId']) && !empty($_REQUEST['partiId']) &&
+        isset($_REQUEST['sectionId']) && !empty($_REQUEST['sectionId']) &&
         isset($_REQUEST['createdBy']) && !empty($_REQUEST['createdBy'])
     ){
         //$_ComiteBase = new ComiteBase();
         $_ComiteBase -> setComiteBaseId(isset($_REQUEST['comiteBaseId']) && !empty($_REQUEST['comiteBaseId']) ? $_REQUEST['comiteBaseId'] : $tools::generateGuid());
         $_ComiteBase -> setLibelle($_REQUEST['libelle']);
         $_ComiteBase -> setCode($_REQUEST['code']);
-        $_ComiteBase -> setPartiId($_REQUEST['partiId']);
+        $_ComiteBase -> setSectionId($_REQUEST['sectionId']);
         $_ComiteBase -> setStatus($tools::$enabled);
         $_ComiteBase -> setAction($_REQUEST_ACTION);
         $_ComiteBase->setCreateBy($_REQUEST['createdBy']);

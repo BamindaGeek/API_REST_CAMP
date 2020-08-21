@@ -1,14 +1,14 @@
 <?php
 
 include 'bdd.php';
-class moSection extends bdd
+
+class moSousPrefecture extends bdd
 {
-    public function CrudSection(Section $section)
+    public function CrudSousPrefecture (SousPrefecture  $sousPrefecture)
     {
-        $this->Query='CALL ps_Section (:sectionId,
+        $this->Query='CALL ps_SousPrefecture (:sousPrefectureId,
                                         :libelle,
-                                        :code,
-                                        :communeId,
+                                        :departementId,
                                         :status,
                                         :createdBy,
                                         :Action)';
@@ -19,17 +19,16 @@ class moSection extends bdd
             $PDOprepare = $this ->prepareQuery();
 
             $PDOprepare->execute(array(
-                    'sectionId'=>$section->getsectionId(),
-                    'libelle'=>$section->getLibelle(),
-                    'code'=>$section->getCode(),
-                    'communeId'=>$section->getCommuneId(),
-                    'status'=>$section->getStatus(),
-                    'createdBy'=>$section->getCreateBy(),
-                    'Action'=>$section->getAction()
+                    'sousPrefectureId'=>$sousPrefecture->getSousPrefectureId(),
+                    'libelle'=>$sousPrefecture->getLibelle(),
+                    'departementId'=>$sousPrefecture->getDepartementId(),
+                    'status'=>$sousPrefecture->getStatus(),
+                    'createdBy'=>$sousPrefecture->getCreateBy(),
+                    'Action'=>$sousPrefecture->getAction()
                 )
             );
 
-            switch ($section->getAction()){
+            switch ($sousPrefecture->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
                     $this->Response = $PDOprepare -> fetchAll();

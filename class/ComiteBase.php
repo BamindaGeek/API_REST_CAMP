@@ -7,7 +7,7 @@ class ComiteBase extends messageError
     private $comiteBaseId;
     private $libelle;
     private $code;
-    private $partiId;
+    private $sectionId;
     private $status;
     private $createBy;
     private $createOn;
@@ -87,17 +87,17 @@ class ComiteBase extends messageError
     /**
      * @return mixed
      */
-    public function getPartiId()
+    public function getSectionId()
     {
-        return $this->partiId;
+        return $this->sectionId;
     }
 
     /**
-     * @param mixed $partiId
+     * @param mixed $sectionId
      */
-    public function setPartiId($partiId)
+    public function setSectionId($sectionId)
     {
-        $this->partiId = $partiId;
+        $this->sectionId = $sectionId;
     }
 
 

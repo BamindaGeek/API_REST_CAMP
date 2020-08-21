@@ -7,6 +7,7 @@ class moAffectationMission extends bdd
         $this->Query='CALL ps_AffectationMission (:affectationMissionId,
                                         :missionId,
                                         :membreId,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -19,6 +20,7 @@ class moAffectationMission extends bdd
                     'affectationMissionId'=>$affectationMission->getAffectationMissionId(),
                     'missionId'=>$affectationMission->getMissionId(),
                     'membreId'=>$affectationMission->getMembreId(),
+                    'status'=>$affectationMission->getStatus(),
                     'createdBy'=>$affectationMission->getCreateBy(),
                     'Action'=>$affectationMission->getAction()
                 )

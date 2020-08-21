@@ -9,6 +9,7 @@ class moChecklist extends bdd
                                         :affectationMissionId,
                                         :membreId,
                                         :etat,
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -22,6 +23,7 @@ class moChecklist extends bdd
                     'affectationMissionId'=>$checklist->getAffectationMissionId(),
                     'membreId'=>$checklist->getMembreId(),
                     'etat'=>$checklist->getEtat(),
+                    'status'=>$checklist->getStatus(),
                     'createdBy'=>$checklist->getCreateBy(),
                     'Action'=>$checklist->getAction()
                 )

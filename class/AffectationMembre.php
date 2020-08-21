@@ -1,14 +1,12 @@
 <?php
 
 include 'messageError.php';
-class Objectif extends messageError
+class AffectationMembre extends messageError
 {
     private $id;
-    private $objectifId;
-    private $libelle;
-    private $code;
-    private $valeur;
-    private $communeId;
+    private $affectationMembreId;
+    private $membreId;
+    private $comiteBaseId;
     private $status;
     private $createBy;
     private $createOn;
@@ -40,83 +38,49 @@ class Objectif extends messageError
     /**
      * @return mixed
      */
-    public function getObjectifId()
+    public function getAffectationMembreId()
     {
-        return $this->objectifId;
+        return $this->affectationMembreId;
     }
 
     /**
-     * @param mixed $objectifId
+     * @param mixed $affectationMembreId
      */
-    public function setObjectifId($objectifId)
+    public function setAffectationMembreId($affectationMembreId)
     {
-        $this->objectifId = $objectifId;
-    }
-
-
-
-    /**
-     * @return mixed
-     */
-    public function getLibelle()
-    {
-        return $this->libelle;
-    }
-
-    /**
-     * @param mixed $libelle
-     */
-    public function setLibelle($libelle)
-    {
-        $this->libelle = $libelle;
+        $this->affectationMembreId = $affectationMembreId;
     }
 
     /**
      * @return mixed
      */
-    public function getCode()
+    public function getMembreId()
     {
-        return $this->code;
+        return $this->membreId;
     }
 
     /**
-     * @param mixed $code
+     * @param mixed $membreId
      */
-    public function setCode($code)
+    public function setMembreId($membreId)
     {
-        $this->code = $code;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getValeur()
-    {
-        return $this->valeur;
-    }
-
-    /**
-     * @param mixed $valeur
-     */
-    public function setValeur($valeur)
-    {
-        $this->valeur = $valeur;
+        $this->membreId = $membreId;
     }
 
     /**
      * @return mixed
      */
-    public function getCommuneId()
+    public function getComiteBaseId()
     {
-        return $this->communeId;
+        return $this->comiteBaseId;
     }
 
     /**
-     * @param mixed $communeId
+     * @param mixed $comiteBaseId
      */
-    public function setCommuneId($communeId)
+    public function setComiteBaseId($comiteBaseId)
     {
-        $this->communeId = $communeId;
+        $this->comiteBaseId = $comiteBaseId;
     }
 
     /**
