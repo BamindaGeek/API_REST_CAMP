@@ -20,7 +20,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_AffectationMission -> setComment(isset($_REQUEST['comment']) && !empty($_REQUEST['comment']) ? $_REQUEST['comment']:null);
         $_AffectationMission -> setStatus($tools::$enabled);
         $_AffectationMission -> setAction($_REQUEST_ACTION);
-        $_AffectationMission -> setCreateBy($_REQUEST['createdBy']);
+        $_AffectationMission -> setCreateBy(isset($_REQUEST['createdBy']) && !empty($_REQUEST['createdBy']) ? $_REQUEST['createdBy']:null);
         //Insertion en base
         $_Response = $_ModelAffectationMission ->CrudAffectationMission($_AffectationMission);
         $_RESPONSE = $tools::getMessageSuccess($_Response);
