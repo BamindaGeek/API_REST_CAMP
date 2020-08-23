@@ -1,14 +1,14 @@
 <?php
 
 include 'bdd.php';
-class moChecklist extends bdd
+class moAffectationObjectif extends bdd
 {
-    public function CrudChecklist(Checklist $checklist)
-    {
-        $this->Query='CALL ps_Checklist (:checkListId,
-                                        :affectationMissionId,
-                                        :membreId,
-                                        :etat,
+    public function CrudAffectationObjectif(AffectationObjectif $affectationObjectif){
+        $this->Query='CALL ps_AffectationObjectif (:affectationObjectifId,
+                                        :objectifId,
+                                        :sousPrefectureId,
+                                        :valeur,
+                                        :deadline,
                                         :comment,
                                         :status,
                                         :createdBy,
@@ -20,18 +20,19 @@ class moChecklist extends bdd
             $PDOprepare = $this ->prepareQuery();
 
             $PDOprepare->execute(array(
-                    'checkListId'=>$checklist->getCheckListId(),
-                    'affectationMissionId'=>$checklist->getAffectationMissionId(),
-                    'membreId'=>$checklist->getMembreId(),
-                    'etat'=>$checklist->getEtat(),
-                    'comment'=>$checklist->getComment(),
-                    'status'=>$checklist->getStatus(),
-                    'createdBy'=>$checklist->getCreateBy(),
-                    'Action'=>$checklist->getAction()
+                    'affectationObjectifId'=>$affectationObjectif->getAffectationobjectifId(),
+                    'objectifId'=>$affectationObjectif->getObjectifId(),
+                    'sousPrefectureId'=>$affectationObjectif->getSousPrefectureId(),
+                    'valeur'=>$affectationObjectif->getValeur(),
+                    'deadline'=>$affectationObjectif->getDeadline(),
+                    'comment'=>$affectationObjectif->getComment(),
+                    'status'=>$affectationObjectif->getStatus(),
+                    'createdBy'=>$affectationObjectif->getCreateBy(),
+                    'Action'=>$affectationObjectif->getAction()
                 )
             );
 
-            switch ($checklist->getAction()){
+            switch ($affectationObjectif->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
                     $this->Response = $PDOprepare -> fetchAll();

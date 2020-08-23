@@ -8,6 +8,7 @@ class Checklist extends messageError
     private $affectationMissionId;
     private $membreId;
     private $etat;
+    private $comment;
     private $status;
     private $createBy;
     private $createOn;
@@ -99,6 +100,24 @@ class Checklist extends messageError
     {
         $this->etat = $etat;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * @param mixed $comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+    }
+
+
 
     /**
      * @return mixed

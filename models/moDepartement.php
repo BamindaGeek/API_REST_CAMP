@@ -31,11 +31,12 @@ class moDepartement extends bdd
             switch ($departement->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
+                case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;
-                case $this::$SelectById:
-                    $this->Response = $PDOprepare -> fetch();
-                    break;
+               /* case $this::$SelectById:
+                    $this->Response = $PDOprepare -> fetchAll();
+                    break;*/
                 case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:

@@ -9,9 +9,7 @@ class moObjectif extends bdd
         $this->Query='CALL ps_Objectif(:objectifId,
                                         :libelle,
                                         :code,
-                                        :valeur,
-                                        :communeId,
-                                        :status;
+                                        :status,
                                         :createdBy,
                                         :Action)';
         try
@@ -24,8 +22,6 @@ class moObjectif extends bdd
                     'objectifId'=>$objectif->getObjectifId(),
                     'libelle'=>$objectif->getLibelle(),
                     'code'=>$objectif->getCode(),
-                    'valeur'=>$objectif->getValeur(),
-                    'communeId'=>$objectif->getCommuneId(),
                     'status'=>$objectif->getStatus(),
                     'createdBy'=>$objectif->getCreateBy(),
                     'Action'=>$objectif->getAction()

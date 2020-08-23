@@ -1,20 +1,20 @@
 <?php
 
 include 'messageError.php';
-class Objectif extends messageError
+class AffectationObjectif extends messageError
 {
     private $id;
+    private $affectationobjectifId;
     private $objectifId;
-    private $libelle;
-    private $code;
+    private $sousPrefectureId;
+    private $valeur;
+    private $deadline;
+    private $comment;
     private $status;
     private $createBy;
     private $createOn;
     private $action;
 
-    /**
-     * Membre constructor.
-     */
     public function __construct()
     {
     }
@@ -38,6 +38,22 @@ class Objectif extends messageError
     /**
      * @return mixed
      */
+    public function getAffectationobjectifId()
+    {
+        return $this->affectationobjectifId;
+    }
+
+    /**
+     * @param mixed $affectationobjectifId
+     */
+    public function setAffectationobjectifId($affectationobjectifId)
+    {
+        $this->affectationobjectifId = $affectationobjectifId;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getObjectifId()
     {
         return $this->objectifId;
@@ -51,38 +67,68 @@ class Objectif extends messageError
         $this->objectifId = $objectifId;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getSousPrefectureId()
+    {
+        return $this->sousPrefectureId;
+    }
 
+    /**
+     * @param mixed $sousPrefectureId
+     */
+    public function setSousPrefectureId($sousPrefectureId)
+    {
+        $this->sousPrefectureId = $sousPrefectureId;
+    }
 
     /**
      * @return mixed
      */
-    public function getLibelle()
+    public function getValeur()
     {
-        return $this->libelle;
+        return $this->valeur;
     }
 
     /**
-     * @param mixed $libelle
+     * @param mixed $valeur
      */
-    public function setLibelle($libelle)
+    public function setValeur($valeur)
     {
-        $this->libelle = $libelle;
+        $this->valeur = $valeur;
     }
 
     /**
      * @return mixed
      */
-    public function getCode()
+    public function getDeadline()
     {
-        return $this->code;
+        return $this->deadline;
     }
 
     /**
-     * @param mixed $code
+     * @param mixed $deadline
      */
-    public function setCode($code)
+    public function setDeadline($deadline)
     {
-        $this->code = $code;
+        $this->deadline = $deadline;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * @param mixed $comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
     }
 
     /**
@@ -148,6 +194,5 @@ class Objectif extends messageError
     {
         $this->action = $action;
     }
-
 
 }

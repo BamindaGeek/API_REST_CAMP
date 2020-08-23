@@ -20,45 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21dbf74d-7174-497a-8326-2b0a52daf58c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/District.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/AffectationMembre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/Departement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/District.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/Region.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class/SousPrefecture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlers/coAffectationMembre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlers/coDepartement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlers/coDistrict.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlers/coRegion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controlers/coSousPrefecture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/moAffectationMembre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/moDepartement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/moDistrict.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/moRegion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/moSousPrefecture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commune.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/AffectationObjectif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlers/coAffectationObjectif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/departement.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/moAffectationObjectif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/region.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5445b7b6-fc7d-4528-be7e-2fefcd9dda55.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5445b7b6-fc7d-4528-be7e-2fefcd9dda55.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5445b7b6-fc7d-4528-be7e-2fefcd9dda55/storage_v2/_src_/schema/campagne_bd.w_EoeQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5445b7b6-fc7d-4528-be7e-2fefcd9dda55/storage_v2/_src_/schema/campagne_bd.w_EoeQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/ComiteBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/ComiteBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/AffectationMission.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/AffectationMission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Checklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Checklist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class/Objectif.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Objectif.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/coComiteBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coComiteBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/coAffectationMission.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coAffectationMission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/coChecklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coChecklist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlers/coObjectif.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coObjectif.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/coSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coSection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/bdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/bdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moAffectation.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moAffectation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/moAffectationMission.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moAffectationMission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moCampagne.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moCampagne.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/moChecklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moChecklist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moComiteBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moComiteBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moMembre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moMission.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moMission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/moDepartement.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moDepartement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/moObjectif.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moObjectif.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moParti.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moParti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moSection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/moTypeMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moTypeMembre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/moRegion.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moRegion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/moSousPrefecture.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moSousPrefecture.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +102,7 @@
       <workItem from="1597522567263" duration="3297000" />
       <workItem from="1597590099457" duration="24010000" />
       <workItem from="1597662639996" duration="22592000" />
-      <workItem from="1598020767097" duration="22309000" />
+      <workItem from="1598020767097" duration="53097000" />
     </task>
     <servers />
   </component>
@@ -147,13 +129,14 @@
     <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597590640404" />
     <state x="2000" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820/1440.-56.1920.1055@1440.-56.1920.1055" timestamp="1597663685278" />
     <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597520637754" />
-    <state x="502" y="-814" width="421" height="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1598050524360">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state x="-1171" y="156" width="421" height="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1598136044628">
+      <screen x="-1920" y="-85" width="1920" height="1055" />
     </state>
     <state x="-1171" y="265" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597507335337" />
     <state x="502" y="-814" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026433019" />
     <state x="-1171" y="265" width="421" height="414" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605630538" />
     <state x="502" y="-814" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598050524360" />
+    <state x="-1171" y="156" key="#com.intellij.ide.util.MemberChooser/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598136044628" />
     <state x="-1171" y="250" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610757856" />
     <state x="-1263" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597516723273">
       <screen x="-1920" y="25" width="1920" height="1055" />
@@ -163,68 +146,98 @@
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
     <state x="-1820" y="125" width="1720" height="855" key="DiffContextDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597614055075" />
-    <state width="1294" height="190" key="GridCell.Tab.0.bottom" timestamp="1598051782958">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom" timestamp="1598146573037">
+      <screen x="1440" y="-111" width="1920" height="1055" />
     </state>
     <state width="1294" height="153" key="GridCell.Tab.0.bottom/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605957480" />
     <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026079648" />
     <state width="1294" height="264" key="GridCell.Tab.0.bottom/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597619654330" />
     <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051782958" />
     <state width="1294" height="191" key="GridCell.Tab.0.bottom/0.25.1440.820/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597884090684" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096764811" />
     <state width="1294" height="264" key="GridCell.Tab.0.bottom/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597620026996" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598064286822" />
     <state width="1294" height="191" key="GridCell.Tab.0.bottom/0.25.1440.821/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597919279467" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097478579" />
     <state width="958" height="191" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1597950043375" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135794444" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@1440.-111.1920.1055" timestamp="1598146573037" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100679260" />
+    <state width="1294" height="190" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.-85.1920.988/1440.-111.1920.1055@-1920.-85.1920.988" timestamp="1598097798361" />
     <state width="1294" height="153" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610586746" />
-    <state width="1294" height="190" key="GridCell.Tab.0.center" timestamp="1598051782957">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center" timestamp="1598146573036">
+      <screen x="1440" y="-111" width="1920" height="1055" />
     </state>
     <state width="1294" height="153" key="GridCell.Tab.0.center/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605957480" />
     <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026079645" />
     <state width="1294" height="264" key="GridCell.Tab.0.center/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597619654328" />
     <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051782957" />
     <state width="1294" height="191" key="GridCell.Tab.0.center/0.25.1440.820/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597884090680" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096764810" />
     <state width="1294" height="264" key="GridCell.Tab.0.center/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597620026995" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598064286820" />
     <state width="1294" height="191" key="GridCell.Tab.0.center/0.25.1440.821/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597919279466" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097478578" />
     <state width="958" height="191" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1597950043373" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135794443" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@1440.-111.1920.1055" timestamp="1598146573035" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100679260" />
+    <state width="1294" height="190" key="GridCell.Tab.0.center/0.25.1440.875/-1920.-85.1920.988/1440.-111.1920.1055@-1920.-85.1920.988" timestamp="1598097798359" />
     <state width="1294" height="153" key="GridCell.Tab.0.center/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610586746" />
-    <state width="1294" height="190" key="GridCell.Tab.0.left" timestamp="1598051782956">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left" timestamp="1598146573035">
+      <screen x="1440" y="-111" width="1920" height="1055" />
     </state>
     <state width="1294" height="153" key="GridCell.Tab.0.left/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605957479" />
     <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026079645" />
     <state width="1294" height="264" key="GridCell.Tab.0.left/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597619654327" />
     <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051782956" />
     <state width="1294" height="191" key="GridCell.Tab.0.left/0.25.1440.820/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597884090679" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096764810" />
     <state width="1294" height="264" key="GridCell.Tab.0.left/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597620026994" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598064286820" />
     <state width="1294" height="191" key="GridCell.Tab.0.left/0.25.1440.821/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597919279465" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097478577" />
     <state width="958" height="191" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1597950043373" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135794443" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@1440.-111.1920.1055" timestamp="1598146573035" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100679259" />
+    <state width="1294" height="190" key="GridCell.Tab.0.left/0.25.1440.875/-1920.-85.1920.988/1440.-111.1920.1055@-1920.-85.1920.988" timestamp="1598097798358" />
     <state width="1294" height="153" key="GridCell.Tab.0.left/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610586746" />
-    <state width="1294" height="190" key="GridCell.Tab.0.right" timestamp="1598051782957">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right" timestamp="1598146573036">
+      <screen x="1440" y="-111" width="1920" height="1055" />
     </state>
     <state width="1294" height="153" key="GridCell.Tab.0.right/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605957480" />
     <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026079646" />
     <state width="1294" height="264" key="GridCell.Tab.0.right/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597619654329" />
     <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051782957" />
     <state width="1294" height="191" key="GridCell.Tab.0.right/0.25.1440.820/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597884090683" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096764810" />
     <state width="1294" height="264" key="GridCell.Tab.0.right/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597620026995" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598064286821" />
     <state width="1294" height="191" key="GridCell.Tab.0.right/0.25.1440.821/1440.-111.1920.1055/-1920.-85.1920.1055@-1920.-85.1920.1055" timestamp="1597919279466" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097478578" />
     <state width="958" height="191" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1597950043374" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135794443" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@1440.-111.1920.1055" timestamp="1598146573036" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100679260" />
+    <state width="1294" height="190" key="GridCell.Tab.0.right/0.25.1440.875/-1920.-85.1920.988/1440.-111.1920.1055@-1920.-85.1920.988" timestamp="1598097798360" />
     <state width="1294" height="153" key="GridCell.Tab.0.right/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610586746" />
-    <state x="427" y="-798" key="NewPhpClassDialog" timestamp="1598050366205">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state x="-1246" y="172" key="NewPhpClassDialog" timestamp="1598136087527">
+      <screen x="-1920" y="-85" width="1920" height="1055" />
     </state>
     <state x="427" y="-798" key="NewPhpClassDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026785470" />
     <state x="-1246" y="282" key="NewPhpClassDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605101500" />
     <state x="427" y="-798" key="NewPhpClassDialog/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598050366205" />
     <state x="-1246" y="282" key="NewPhpClassDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597517263426" />
-    <state x="534" y="-600" key="NewPhpFileDialog" timestamp="1598050869521">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state x="-1246" y="172" key="NewPhpClassDialog/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598136087527" />
+    <state x="-1139" y="370" key="NewPhpFileDialog" timestamp="1598136499315">
+      <screen x="-1920" y="-85" width="1920" height="1055" />
     </state>
     <state x="534" y="-600" key="NewPhpFileDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026619691" />
     <state x="-1139" y="480" key="NewPhpFileDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605351053" />
     <state x="534" y="-600" key="NewPhpFileDialog/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598050869521" />
     <state x="-1139" y="480" key="NewPhpFileDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597524662835" />
+    <state x="-1139" y="370" key="NewPhpFileDialog/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598136499315" />
     <state x="607" y="-636" width="334" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1598051519245">
       <screen x="-247" y="-1055" width="1920" height="1055" />
     </state>
@@ -233,20 +246,26 @@
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
     <state x="-1181" y="377" width="441" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505620622" />
-    <state x="151" y="-923" width="1009" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598051483387">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state x="-1522" y="47" width="1044" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598135764477">
+      <screen x="-1920" y="-85" width="1920" height="1055" />
     </state>
     <state x="-1113" y="330" width="745" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505722960" />
     <state x="151" y="-923" width="778" height="672" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598027841613" />
     <state x="151" y="-923" width="1009" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051483387" />
     <state x="-1113" y="330" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597522902161" />
-    <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog" timestamp="1598051677078">
-      <screen x="-247" y="-1055" width="1920" height="1055" />
+    <state x="-1522" y="47" width="1044" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135764477" />
+    <state x="-1522" y="47" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100938211" />
+    <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog" timestamp="1598137375699">
+      <screen x="-1920" y="-85" width="1920" height="1055" />
     </state>
     <state x="-1470" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597599190872" />
     <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598031119672" />
     <state x="-1920" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597619335658" />
     <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598051677078" />
+    <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096940472" />
+    <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598053644915" />
     <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821@0.25.1440.821" timestamp="1597684269108" />
+    <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097596091" />
+    <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598137375699" />
   </component>
 </project>

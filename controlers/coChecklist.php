@@ -19,6 +19,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_Checklist -> setAffectationMissionId($_REQUEST['affectationMissionId']);
         $_Checklist -> setMembreId($_REQUEST['membreId']);
         $_Checklist -> setEtat($_REQUEST['etat']);
+        $_Checklist -> setComment(isset($_REQUEST['comment']) && !empty($_REQUEST['comment']) ? $_REQUEST['comment']:null);
         $_Checklist -> setStatus($tools::$enabled);
         $_Checklist -> setAction($_REQUEST_ACTION);
         $_Checklist -> setCreateBy($_REQUEST['createdBy']);

@@ -7,6 +7,7 @@ class AffectationMission extends messageError
     private $affectationMissionId;
     private $missionId;
     private $membreId;
+    private $comment;
     private $status;
     private $createBy;
     private $createOn;
@@ -82,6 +83,23 @@ class AffectationMission extends messageError
     {
         $this->membreId = $membreId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * @param mixed $comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+    }
+
 
     /**
      * @return mixed
