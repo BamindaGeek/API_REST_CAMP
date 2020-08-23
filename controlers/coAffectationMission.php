@@ -11,12 +11,14 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
 {
     if(
         isset($_REQUEST['missionId']) && !empty($_REQUEST['missionId'])  &&
-        isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId'])
+        isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId']) &&
+        isset($_REQUEST['deadline']) && !empty($_REQUEST['deadline'])
     ){
         //$_AffectationMission = new AffectationMission();
         $_AffectationMission -> setAffectationMissionId(isset($_REQUEST['affectationMissionId']) && !empty($_REQUEST['affectationMissionId']) ? $_REQUEST['affectationMissionId'] : $tools::generateGuid());
         $_AffectationMission -> setMissionId($_REQUEST['missionId']);
         $_AffectationMission -> setMembreId($_REQUEST['membreId']);
+        $_AffectationMission -> setDeadline($_REQUEST['deadline']);
         $_AffectationMission -> setComment(isset($_REQUEST['comment']) && !empty($_REQUEST['comment']) ? $_REQUEST['comment']:null);
         $_AffectationMission -> setStatus($tools::$enabled);
         $_AffectationMission -> setAction($_REQUEST_ACTION);
