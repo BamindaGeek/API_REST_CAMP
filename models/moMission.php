@@ -30,11 +30,12 @@ class moMission extends bdd
             switch ($mission->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
+                case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;
-                case $this::$SelectById:
+                /*case $this::$SelectById:
                     $this->Response = $PDOprepare -> fetch();
-                    break;
+                    break;*/
                 case $this::$DeleteById:
                 case $this::$UpdateById:
                 case $this::$Insert:
