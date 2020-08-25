@@ -70,5 +70,7 @@ if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
     $_RESPONSE = $tools::getMessageError($_Response);
 }
 
+
+
 echo json_encode($_RESPONSE);
 

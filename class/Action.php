@@ -10,6 +10,7 @@ class Action
 {
     public static $Insert = 'Insert';
     public static $SelectAll = 'SelectAll';
+    public static $SelectAllBy = 'SelectAllBy';
     public static $SelectById = 'SelectById';
     public static $UpdateById = 'UpdateById';
     public static $DeleteById = 'DeleteById';
@@ -54,6 +55,22 @@ class Action
     public function setSelectAll($SelectAll)
     {
         $this::$SelectAll = $SelectAll;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSelectAllBy()
+    {
+        return $this::$SelectAllBy;
+    }
+
+    /**
+     * @param mixed $SelectAllBy
+     */
+    public function setSelectAllBy($SelectAllBy)
+    {
+        $this::$SelectAllBy = $SelectAllBy;
     }
 
     /**

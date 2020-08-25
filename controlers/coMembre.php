@@ -90,6 +90,21 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre || $_REQUES
     }
 }
 
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAllBy)
+{
+    if(isset($_REQUEST['valeur'])){
+        //Traitement de la connexion
+        $_Membre -> setAction($_REQUEST_ACTION);
+        $_Membre -> setMembreId($_REQUEST['valeur']);
+        $_Response = $_ModelMembre ->CrudMembre($_Membre);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
+    }
+    else
+    {
+        $_RESPONSE = $tools::getMessageEmpty();
+    }
+}
+
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAll)
 {
     //Traitement de la connexion

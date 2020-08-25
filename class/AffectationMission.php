@@ -8,6 +8,7 @@ class AffectationMission extends messageError
     private $missionId;
     private $membreId;
     private $deadline;
+    private $etat;
     private $comment;
     private $status;
     private $createBy;
@@ -99,6 +100,22 @@ class AffectationMission extends messageError
     public function setDeadline($deadline)
     {
         $this->deadline = $deadline;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEtat()
+    {
+        return $this->etat;
+    }
+
+    /**
+     * @param mixed $etat
+     */
+    public function setEtat($etat)
+    {
+        $this->etat = $etat;
     }
 
     /**
