@@ -75,13 +75,15 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
     }
 }
 
-if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre || $_REQUEST_ACTION == $_ACTION::$SelectById)
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Rechercher || $_REQUEST_ACTION == $_ACTION::$SelectById)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
         $_Membre -> setAction($_REQUEST_ACTION);
         $_Membre -> setMembreId($_REQUEST['valeur']);
+        $_Membre -> setNumeroElecteur($_REQUEST['valeur']);
         $_Response = $_ModelMembre ->CrudMembre($_Membre);
+        //print_r($_Response);
         $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
     }
     else
