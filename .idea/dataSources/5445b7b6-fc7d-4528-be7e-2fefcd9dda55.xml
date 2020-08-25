@@ -1093,7 +1093,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="363" parent="3" name="ps_Affectation">
-      <SourceTextLength>5897</SourceTextLength>
+      <SourceTextLength>6364</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1123,7 +1123,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="369" parent="3" name="ps_ComiteBase">
-      <SourceTextLength>1330</SourceTextLength>
+      <SourceTextLength>1601</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1138,7 +1138,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="372" parent="3" name="ps_Membre">
-      <SourceTextLength>2697</SourceTextLength>
+      <SourceTextLength>3865</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
