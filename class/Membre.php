@@ -17,6 +17,7 @@ class Membre extends messageError
     private $contact;
     private $sex;
     private $communeId;
+    private $comiteBaseId;
     private $lieuVoteId;
     private $dateNaissance;
     private $lieuNaissance;
@@ -187,6 +188,22 @@ class Membre extends messageError
     public function setCommuneId($communeId)
     {
         $this->communeId = $communeId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getComiteBaseId()
+    {
+        return $this->comiteBaseId;
+    }
+
+    /**
+     * @param mixed $comiteBaseId
+     */
+    public function setComiteBaseId($comiteBaseId)
+    {
+        $this->comiteBaseId = $comiteBaseId;
     }
 
     /**

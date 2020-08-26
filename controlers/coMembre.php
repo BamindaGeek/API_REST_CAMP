@@ -22,7 +22,8 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         isset($_REQUEST['dateNaissance']) && !empty($_REQUEST['dateNaissance']) &&
         isset($_REQUEST['lieuNaissance']) && !empty($_REQUEST['lieuNaissance']) &&
         isset($_REQUEST['profession']) && !empty($_REQUEST['profession']) &&
-        isset($_REQUEST['communeId']) && !empty($_REQUEST['communeId'])
+        isset($_REQUEST['communeId']) && !empty($_REQUEST['communeId']) &&
+        isset($_REQUEST['comiteBaseId']) && !empty($_REQUEST['comiteBaseId'])
     ){
         //$_Membre = new Membre();
         $_Membre -> setMembreId(isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId']) ? $_REQUEST['membreId'] : $tools::generateGuid());
@@ -33,6 +34,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         $_Membre -> setContact(isset($_REQUEST['contact']) && !empty($_REQUEST['contact']) ? $_REQUEST['contact']:null);
         $_Membre -> setSex(isset($_REQUEST['sex']) && !empty($_REQUEST['sex']) ? $_REQUEST['sex'] : 'M');
         $_Membre -> setCommuneId($_REQUEST['communeId']);
+        $_Membre -> setComiteBaseId($_REQUEST['comiteBaseId']);
         $_Membre -> setLieuVoteId(isset($_REQUEST['lieuVoteId']) && !empty($_REQUEST['lieuVoteId']) ? $_REQUEST['lieuVoteId']:null);
         $_Membre -> setDateNaissance($_REQUEST['dateNaissance']);
         $_Membre -> setLieuNaissance($_REQUEST['lieuNaissance']);

@@ -8,7 +8,7 @@
 header('Access-Control-Allow-Origin: *');
 //Declaration des variables globales
 $_RESPONSE = array(
-    'status'=>false,
+    'status'=>true,
     'donnees'=>array(),
     'message'=>'Aucune action réconnue demandé par la requete ajax',
 );
