@@ -11,6 +11,7 @@ class Membre extends messageError
     private $id;
     private $membreId;
     private $numeroElecteur;
+    private $numeroCNI;
     private $nom;
     private $prenom;
     private $email;
@@ -92,7 +93,21 @@ class Membre extends messageError
         $this->numeroElecteur = $numeroElecteur;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getNumeroCNI()
+    {
+        return $this->numeroCNI;
+    }
 
+    /**
+     * @param mixed $numeroCNI
+     */
+    public function setNumeroCNI($numeroCNI)
+    {
+        $this->numeroCNI = $numeroCNI;
+    }
 
     /**
      * @return mixed

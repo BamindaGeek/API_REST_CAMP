@@ -28,6 +28,7 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
         //$_Membre = new Membre();
         $_Membre -> setMembreId(isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId']) ? $_REQUEST['membreId'] : $tools::generateGuid());
         $_Membre -> setNumeroElecteur(isset($_REQUEST['numeroElecteur']) && !empty($_REQUEST['numeroElecteur']) ?$_REQUEST['numeroElecteur']:null);
+        $_Membre -> setNumeroCNI(isset($_REQUEST['numeroCNI']) && !empty($_REQUEST['numeroCNI']) ?$_REQUEST['numeroCNI']:null);
         $_Membre -> setNom($_REQUEST['nom']);
         $_Membre -> setPrenom($_REQUEST['prenom']);
         $_Membre -> setEmail(isset($_REQUEST['email']) && !empty($_REQUEST['email']) ? $_REQUEST['email']:null);

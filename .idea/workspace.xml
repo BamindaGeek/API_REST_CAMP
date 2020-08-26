@@ -26,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/class/Membre.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Membre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlers/coMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/coMembre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/moMembre.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/moMembre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/tools.php" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <workItem from="1598234324367" duration="1475000" />
       <workItem from="1598261066154" duration="2577000" />
       <workItem from="1598305965429" duration="20472000" />
-      <workItem from="1598447082608" duration="4336000" />
+      <workItem from="1598447082608" duration="4596000" />
     </task>
     <servers />
   </component>
@@ -121,14 +120,15 @@
     <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597590640404" />
     <state x="2000" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820/1440.-56.1920.1055@1440.-56.1920.1055" timestamp="1597663685278" />
     <state x="-1360" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597520637754" />
-    <state x="562" y="213" width="426" height="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1598460910230">
-      <screen x="0" y="25" width="1440" height="822" />
+    <state x="562" y="213" width="426" height="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1598465236050">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
     <state x="-1171" y="265" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597507335337" />
     <state x="502" y="-814" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598026433019" />
     <state x="-1171" y="265" width="421" height="414" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597605630538" />
     <state x="502" y="-814" key="#com.intellij.ide.util.MemberChooser/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598202338875" />
     <state x="-1171" y="189" key="#com.intellij.ide.util.MemberChooser/0.25.1440.821/-1920.-52.1920.1055/1440.-91.1920.1055@-1920.-52.1920.1055" timestamp="1598317876823" />
+    <state x="562" y="213" key="#com.intellij.ide.util.MemberChooser/0.25.1440.821@0.25.1440.821" timestamp="1598465236050" />
     <state x="562" y="213" width="426" height="323" key="#com.intellij.ide.util.MemberChooser/0.25.1440.822@0.25.1440.822" timestamp="1598460910230" />
     <state x="-1171" y="156" key="#com.intellij.ide.util.MemberChooser/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598136044628" />
     <state x="-1171" y="250" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875/-1920.25.1920.987@-1920.25.1920.987" timestamp="1597610757856" />
@@ -260,18 +260,19 @@
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
     <state x="-1181" y="377" width="441" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505620622" />
-    <state x="-1522" y="80" width="1044" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598262864854">
-      <screen x="-1920" y="-52" width="1920" height="1055" />
+    <state x="299" y="128" width="1044" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598465144409">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
     <state x="-1113" y="330" width="745" height="623" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597505722960" />
     <state x="151" y="-923" width="778" height="672" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598027841613" />
     <state x="151" y="-923" width="1009" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.820/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598208309909" />
     <state x="-1522" y="80" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.821/-1920.-52.1920.1055/1440.-91.1920.1055@-1920.-52.1920.1055" timestamp="1598262864854" />
     <state x="-1113" y="330" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.821/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597522902161" />
+    <state x="299" y="128" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.821@0.25.1440.821" timestamp="1598465144409" />
     <state x="-1522" y="47" width="1044" height="711" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.823/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598135764477" />
     <state x="-1522" y="47" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1440.824/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598100938211" />
-    <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog" timestamp="1598462015083">
-      <screen x="0" y="25" width="1440" height="822" />
+    <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog" timestamp="1598465207419">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
     <state x="-1470" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.819/-1920.25.1920.1055@-1920.25.1920.1055" timestamp="1597599190872" />
     <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.819/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598031119672" />
@@ -281,7 +282,7 @@
     <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598096940472" />
     <state x="-247" y="-1055" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821/-247.-1055.1920.1055@-247.-1055.1920.1055" timestamp="1598231207837" />
     <state x="-1920" y="-52" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821/1440.-91.1920.1055/-1920.-52.1920.1055@-1920.-52.1920.1055" timestamp="1598432001678" />
-    <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821@0.25.1440.821" timestamp="1597684269108" />
+    <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.821@0.25.1440.821" timestamp="1598465207419" />
     <state x="-1920" y="-52" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.822/-1920.-52.1920.1055/1440.-91.1920.1055@-1920.-52.1920.1055" timestamp="1598394021125" />
     <state x="-1920" y="-85" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.822/-1920.-85.1920.1055/1440.-111.1920.1055@-1920.-85.1920.1055" timestamp="1598097596091" />
     <state x="0" y="25" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.25.1440.822@0.25.1440.822" timestamp="1598462015083" />

@@ -14,6 +14,7 @@ class moMembre extends bdd
     {
         $this->Query='CALL ps_Membre (:membreId,
                                         :numeroElecteur,
+                                        :numeroCNI,
                                         :nom,
                                         :prenom,
                                         :email,
@@ -47,6 +48,7 @@ class moMembre extends bdd
             $PDOprepare->execute(array(
                     'membreId'=>$Membre->getMembreId(),
                     'numeroElecteur'=>$Membre->getNumeroElecteur(),
+                    'numeroCNI'=>$Membre->getNumeroCNI(),
                     'nom'=>$Membre->getNom(),
                     'prenom'=>$Membre->getPrenom(),
                     'email'=>$Membre->getEmail(),
