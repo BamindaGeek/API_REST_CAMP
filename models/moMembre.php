@@ -82,7 +82,8 @@ class moMembre extends bdd
                 case $this::$SelectAllBy:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;
-                case $this::$SelectById || $this::$Rechercher:
+                case $this::$SelectById:
+                case $this::$Rechercher:
                     $this->Response = $PDOprepare -> fetch();
                     break;
                 case $this::$DeleteById:

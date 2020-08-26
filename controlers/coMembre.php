@@ -120,4 +120,19 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAll)
     $_RESPONSE = $tools::getMessageError($_Response);
 }
 
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
+{
+    if(isset($_REQUEST['valeur'])){
+        //Traitement de la connexion
+        $_Membre -> setAction($_REQUEST_ACTION);
+        $_Membre -> setMembreId($_REQUEST['valeur']);
+        $_Response = $_ModelMembre ->CrudMembre($_Membre);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
+    }
+    else
+    {
+        $_RESPONSE = $tools::getMessageEmpty();
+    }
+}
+
 echo json_encode($_RESPONSE);
