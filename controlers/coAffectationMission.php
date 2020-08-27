@@ -11,14 +11,16 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
 {
     if(
         isset($_REQUEST['missionId']) && !empty($_REQUEST['missionId'])  &&
-        isset($_REQUEST['membreId']) && !empty($_REQUEST['membreId']) &&
+        isset($_REQUEST['blocId']) && !empty($_REQUEST['blocId']) &&
         isset($_REQUEST['deadline']) && !empty($_REQUEST['deadline'])&&
-        isset($_REQUEST['etat'])
+        isset($_REQUEST['etat']) &&
+        isset($_REQUEST['type'])
     ){
         //$_AffectationMission = new AffectationMission();
         $_AffectationMission -> setAffectationMissionId(isset($_REQUEST['affectationMissionId']) && !empty($_REQUEST['affectationMissionId']) ? $_REQUEST['affectationMissionId'] : $tools::generateGuid());
         $_AffectationMission -> setMissionId($_REQUEST['missionId']);
-        $_AffectationMission -> setMembreId($_REQUEST['membreId']);
+        $_AffectationMission -> setBlocId($_REQUEST['blocId']);
+        $_AffectationMission -> setType($_REQUEST['type']);
         $_AffectationMission -> setDeadline($_REQUEST['deadline']);
         $_AffectationMission -> setEtat($_REQUEST['etat']);
         $_AffectationMission -> setComment(isset($_REQUEST['comment']) && !empty($_REQUEST['comment']) ? $_REQUEST['comment']:null);
@@ -66,11 +68,18 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre  || $_REQUE
 }
 
 if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
-{
-    //Traitement de la connexion
-    $_AffectationMission -> setAction($_REQUEST_ACTION);
-    $_Response = $_ModelAffectationMission ->CrudAffectationMission($_AffectationMission);
-    $_RESPONSE = $tools::getMessageError($_Response);
+    {
+        if(isset($_REQUEST['valeur'])){
+        //Traitement de la connexion
+        $_AffectationMission -> setAction($_REQUEST_ACTION);
+        $_AffectationMission -> setType($_REQUEST['valeur']);
+        $_Response = $_ModelAffectationMission ->CrudAffectationMission($_AffectationMission);
+        $_RESPONSE = $tools::getMessageError($_Response);
+    }
+    else
+    {
+        $_RESPONSE = $tools::getMessageEmpty();
+    }
 }
 
 echo json_encode($_RESPONSE);

@@ -6,7 +6,7 @@ class moAffectationObjectif extends bdd
     public function CrudAffectationObjectif(AffectationObjectif $affectationObjectif){
         $this->Query='CALL ps_AffectationObjectif (:affectationObjectifId,
                                         :objectifId,
-                                        :sousPrefectureId,
+                                        :departementId,
                                         :valeur,
                                         :deadline,
                                         :comment,
@@ -22,7 +22,7 @@ class moAffectationObjectif extends bdd
             $PDOprepare->execute(array(
                     'affectationObjectifId'=>$affectationObjectif->getAffectationobjectifId(),
                     'objectifId'=>$affectationObjectif->getObjectifId(),
-                    'sousPrefectureId'=>$affectationObjectif->getSousPrefectureId(),
+                    'departementId'=>$affectationObjectif->getDepartementId(),
                     'valeur'=>$affectationObjectif->getValeur(),
                     'deadline'=>$affectationObjectif->getDeadline(),
                     'comment'=>$affectationObjectif->getComment(),
@@ -35,6 +35,7 @@ class moAffectationObjectif extends bdd
             switch ($affectationObjectif->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
+                case $this::$SelectAllBy:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;
                 case $this::$SelectById:

@@ -6,7 +6,8 @@ class moAffectationMission extends bdd
     public function CrudAffectationMission (AffectationMission $affectationMission){
         $this->Query='CALL ps_AffectationMission (:affectationMissionId,
                                         :missionId,
-                                        :membreId,
+                                        :blocId,
+                                        :type,
                                         :deadline,
                                         :etat,
                                         :comment,
@@ -22,7 +23,8 @@ class moAffectationMission extends bdd
             $PDOprepare->execute(array(
                     'affectationMissionId'=>$affectationMission->getAffectationMissionId(),
                     'missionId'=>$affectationMission->getMissionId(),
-                    'membreId'=>$affectationMission->getMembreId(),
+                    'blocId'=>$affectationMission->getBlocId(),
+                    'type'=>$affectationMission->getType(),
                     'deadline'=>$affectationMission->getDeadline(),
                     'etat'=>$affectationMission->getEtat(),
                     'comment'=>$affectationMission->getComment(),

@@ -6,7 +6,7 @@ class AffectationObjectif extends messageError
     private $id;
     private $affectationobjectifId;
     private $objectifId;
-    private $sousPrefectureId;
+    private $departementId;
     private $valeur;
     private $deadline;
     private $comment;
@@ -70,18 +70,20 @@ class AffectationObjectif extends messageError
     /**
      * @return mixed
      */
-    public function getSousPrefectureId()
+    public function getDepartementId()
     {
-        return $this->sousPrefectureId;
+        return $this->departementId;
     }
 
     /**
-     * @param mixed $sousPrefectureId
+     * @param mixed $departementId
      */
-    public function setSousPrefectureId($sousPrefectureId)
+    public function setDepartementId($departementId)
     {
-        $this->sousPrefectureId = $sousPrefectureId;
+        $this->departementId = $departementId;
     }
+
+
 
     /**
      * @return mixed

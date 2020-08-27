@@ -11,14 +11,14 @@ if($_REQUEST_ACTION != null && ($_REQUEST_ACTION == $_ACTION::$Insert || $_REQUE
 {
     if(
         isset($_REQUEST['objectifId']) && !empty($_REQUEST['objectifId'])  &&
-        isset($_REQUEST['sousPrefectureId']) && !empty($_REQUEST['sousPrefectureId']) &&
+        isset($_REQUEST['departementId']) && !empty($_REQUEST['departementId']) &&
         isset($_REQUEST['valeur']) &&
         isset($_REQUEST['deadline']) && !empty($_REQUEST['deadline'])
     ){
         //$_AffectationObjectif = new AffectationObjectif();
         $_AffectationObjectif -> setAffectationObjectifId(isset($_REQUEST['affectationObjectifId']) && !empty($_REQUEST['affectationObjectifId']) ? $_REQUEST['affectationObjectifId'] : $tools::generateGuid());
         $_AffectationObjectif -> setObjectifId($_REQUEST['objectifId']);
-        $_AffectationObjectif -> setSousPrefectureId($_REQUEST['sousPrefectureId']);
+        $_AffectationObjectif -> setDepartementId($_REQUEST['departementId']);
         $_AffectationObjectif -> setValeur($_REQUEST['valeur']);
         $_AffectationObjectif -> setDeadline($_REQUEST['deadline']);
         $_AffectationObjectif -> setComment(isset($_REQUEST['comment']) && !empty($_REQUEST['comment']) ? $_REQUEST['comment']:null);
@@ -71,6 +71,21 @@ if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAll)
     $_AffectationObjectif -> setAction($_REQUEST_ACTION);
     $_Response = $_ModelAffectationObjectif ->CrudAffectationObjectif($_AffectationObjectif);
     $_RESPONSE = $tools::getMessageError($_Response);
+}
+
+if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAllBy)
+{
+    if(isset($_REQUEST['valeur'])){
+        //Traitement de la connexion
+        $_AffectationObjectif -> setAction($_REQUEST_ACTION);
+        $_AffectationObjectif -> setAffectationObjectifId($_REQUEST['valeur']);
+        $_Response = $_ModelAffectationObjectif ->CrudAffectationObjectif($_AffectationObjectif);
+        $_RESPONSE = $tools::getMessageError($_Response);
+    }
+    else
+    {
+        $_RESPONSE = $tools::getMessageEmpty();
+    }
 }
 
 echo json_encode($_RESPONSE);

@@ -6,7 +6,8 @@ class AffectationMission extends messageError
     private $id;
     private $affectationMissionId;
     private $missionId;
-    private $membreId;
+    private $blocId;
+    private $type;
     private $deadline;
     private $etat;
     private $comment;
@@ -73,18 +74,36 @@ class AffectationMission extends messageError
     /**
      * @return mixed
      */
-    public function getMembreId()
+    public function getBlocId()
     {
-        return $this->membreId;
+        return $this->blocId;
     }
 
     /**
-     * @param mixed $membreId
+     * @param mixed $blocId
      */
-    public function setMembreId($membreId)
+    public function setBlocId($blocId)
     {
-        $this->membreId = $membreId;
+        $this->blocId = $blocId;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param mixed $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+
 
     /**
      * @return mixed
