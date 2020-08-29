@@ -17,6 +17,7 @@ class Action
     public static $Connect = 'Connect';
     public static $Filtre = 'Filtre';
     public static $Rechercher = 'Rechercher';
+    public static $Retrouver = 'Retrouver';
 
     /**
      * Action constructor.

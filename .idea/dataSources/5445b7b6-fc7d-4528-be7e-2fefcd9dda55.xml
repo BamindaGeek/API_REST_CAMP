@@ -1093,7 +1093,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="363" parent="3" name="ps_Affectation">
-      <SourceTextLength>8248</SourceTextLength>
+      <SourceTextLength>16501</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1108,7 +1108,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="366" parent="3" name="ps_AffectationObjectif">
-      <SourceTextLength>3562</SourceTextLength>
+      <SourceTextLength>3872</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1148,7 +1148,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="374" parent="3" name="ps_Objectif">
-      <SourceTextLength>1066</SourceTextLength>
+      <SourceTextLength>1068</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>

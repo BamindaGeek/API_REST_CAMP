@@ -79,6 +79,7 @@ class moMembre extends bdd
             switch ($Membre->getAction()){
                 case $this::$Filtre:
                 case $this::$SelectAll:
+                case $this::$Retrouver:
                 case $this::$SelectAllBy:
                     $this->Response = $PDOprepare -> fetchAll();
                     break;

@@ -50,7 +50,7 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$DeleteById)
     }
 }
 
-if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre  || $_REQUEST_ACTION == $_ACTION::$SelectById)
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectById)
 {
     if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
@@ -81,6 +81,21 @@ if($_REQUEST_ACTION != null &&  $_REQUEST_ACTION == $_ACTION::$SelectAllBy)
         $_AffectationObjectif -> setAffectationObjectifId($_REQUEST['valeur']);
         $_Response = $_ModelAffectationObjectif ->CrudAffectationObjectif($_AffectationObjectif);
         $_RESPONSE = $tools::getMessageError($_Response);
+    }
+    else
+    {
+        $_RESPONSE = $tools::getMessageEmpty();
+    }
+}
+
+if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Filtre)
+{
+    if(isset($_REQUEST['valeur'])){
+        //Traitement de la connexion
+        $_AffectationObjectif -> setAction($_REQUEST_ACTION);
+        $_AffectationObjectif -> setAffectationObjectifId($_REQUEST['valeur']);
+        $_Response = $_ModelAffectationObjectif ->CrudAffectationObjectif($_AffectationObjectif);
+        $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
     }
     else
     {
