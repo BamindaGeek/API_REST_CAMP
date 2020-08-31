@@ -97,21 +97,21 @@ if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Rechercher || $_RE
 
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$Retrouver)
 {
-    if(isset($_REQUEST['valeur'])){
+    //if(isset($_REQUEST['valeur'])){
         //Traitement de la connexion
         $_Membre -> setAction($_REQUEST_ACTION);
         $_Membre -> setNumeroElecteur(isset($_REQUEST['numeroElecteur']) && !empty($_REQUEST['numeroElecteur']) ?$_REQUEST['numeroElecteur']:null);
         $_Membre -> setNom(isset($_REQUEST['nom']) && !empty($_REQUEST['nom']) ?$_REQUEST['nom']:null);
         $_Membre -> setPrenom(isset($_REQUEST['prenom']) && !empty($_REQUEST['prenom']) ?$_REQUEST['prenom']:null);
-        $_Membre -> setDateNaissance(isset($_REQUEST['dateNaissance']) && !empty($_REQUEST['dateNaissance']) ?$_REQUEST['dateNaissance']:null);
+        $_Membre -> setDateNaissance(isset($_REQUEST['dateNaissance']) && !empty($_REQUEST['dateNaissance']) ? $_REQUEST['dateNaissance']:null);
         $_Response = $_ModelMembre ->CrudMembre($_Membre);
-        //print_r($_Response);
+        //print_r($_REQUEST['dateNaissance']);
         $_RESPONSE = $tools::getMessageError($_Response != null && $_Response != 1 && sizeof($_Response) > 0 ? $_Response : array());
-    }
+    /*}
     else
     {
         $_RESPONSE = $tools::getMessageEmpty();
-    }
+    }*/
 }
 
 if($_REQUEST_ACTION != null && $_REQUEST_ACTION == $_ACTION::$SelectAllBy)
