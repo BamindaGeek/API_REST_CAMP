@@ -10,7 +10,8 @@ class bdd extends Action
 
 {
     //private $host ='192.168.1.100';
-    private $host ='127.0.0.1';
+    //private $host ='127.0.0.1';
+    private $host ='localhost';
     // private $host = 'dm830513-001.privatesql:35211';
     // private $userName= 'geeksquad';
     // private $userPass= 'GeekSquad225';
